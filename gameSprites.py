@@ -58,7 +58,7 @@ class Cell:
 
         font = pygame.font.SysFont(None, FONT_SIZE)
         text_surface = font.render(
-            str(self.value) if self.value != 0 else "",
+            str(self.value) if self.value != 0 else f"({self.x // self.width} {self.y // self.height})",
             True,
             (0, 0, 0)
         )
