@@ -7,106 +7,112 @@ from gameEvents import Events
 
 import random
 
+import numpy as np 
+from numpy import zeros, array, rot90
+
+
 # -------------------------- CONFIG ------------------------ #
 GRID_SIZE = 4
 WINDOW_SIZE = 100 * GRID_SIZE
-
-pygame.init()
-screen = pygame.display.set_mode((WINDOW_SIZE, WINDOW_SIZE))
-screen.fill(color=(187, 173, 160))
-
-clock = pygame.time.Clock()
-running = True
-
-turn = 0
-currentEvent = Events.START
-
-# Grid initialization
-grid = [
-    [gameSprites.Cell(i, j, 0, WINDOW_SIZE, GRID_SIZE) for i in range(GRID_SIZE)]
-    for j in range(GRID_SIZE)
-]
-
 # ---------------------------------------------------------- #
 
-def move(turn: int, direction: Direction, grid: list[list[gameSprites.Cell]]):
-    print(f"[GAME][TURN - {turn}] [MOVE] Direction: {direction}")
+class Game():
+    def __init__(self):
+        self.grid = zeros((GRID_SIZE, GRID_SIZE))
+        self.gameOver = False 
+        self.turn = 0
+        self.currentEvent = Events.START
 
-    # for i in range(GRID_SIZE):
-    #     for j in range(GRID_SIZE):
-    #         if grid[i][j].value != 0:
-    #             print(f"[GAME][TURN - {turn}] [CELL - {i} {j}]")
+        # ---- pygame setup ---- #
+        pygame.init()
+        self.screen = pygame.display.set_mode((WINDOW_SIZE, WINDOW_SIZE))
+        self.screen.fill(color=(187, 173, 160))
+        self.clock = pygame.time.Clock()
+        
 
-    #             _i, _j  = i, j
+    def move(self, direction):
+        rotatedGrid = rot90(self.grid, direction)
+        columns = [rotatedGrid[i, :] for i in range(GRID_SIZE) ]
 
-    #             while _j >= 0 and _j < GRID_SIZE - 1 and \
-    #                 _i >= 0 and _i < GRID_SIZE - 1 and grid[_i + moves[direction].i][_j + moves[direction].j].value == 0:
-                    
-    #                 grid[_i][_j].value, grid[_i + moves[direction].i][_j + moves[direction].j].value = grid[_i + moves[direction].i][_j + moves[direction].j].value, grid[_i][_j].value
+        newGrid = array([self.moveLeft(column) for column in columns])
 
-    #                 _i += moves[direction].i
-    #                 _j += moves[direction].j
+        self.grid = rot90(newGrid, -direction)
 
+    def isGameOver(self):
+        pass 
 
+    def putRandomValue(self):
+        i, j = (self.grid == 0).nonzero()
+        if i.size != 0:
+            rnd = random.randint(0, i.size - 1)
+            self.grid[i[rnd], j[rnd]] = random.choice([2, 4])
+    
+    def moveLeft(self, column):
+        newColumn = zeros((GRID_SIZE), dtype=column.dtype)
 
-    return grid
-    # print(f"[GAME][TURN - {turn}] [MOVE] Direction: {direction} [RETURN]")
-    # print(f"[GAME][TURN - {turn}] [CELL - {i} {j}] [MOVE] Direction: {direction} _i: {_i}\t _j: {_j}")
+        j = 0
+        previous = None 
 
+        for i in range(column.size):
+            if column[i] != 0:
+                if previous == None:
+                    previous = column[i]
+                else:
+                    if previous == column[i]:
+                        newColumn[j] = 2 * column[i]
+                        j += 1 
+                        previous = None
+                    else:
+                        newColumn[j] = previous
+                        j += 1 
+                        previous = column[i]
+        if previous != None:
+            newColumn[j] = previous
+        return newColumn
+    
+    def drawGrid(self):
+        for i in range(GRID_SIZE):
+            for j in range(GRID_SIZE):
+                Cell(i, j, self.grid[i][j], WINDOW_SIZE, GRID_SIZE).draw(self.screen)
 
-def updateGame(turn: int, event: Events):
-    if turn == 0:       # TODO debug
-        for _ in range(random.choice([1, 2]) if turn == 0 else 1):
-            validCells = [
-                (i, j)
-                for i, row in enumerate(grid)
-                for j, cell in enumerate(row)
-                if cell.value == 0
-            ]
+    def updateGame(self):
+        self.drawGrid()
+        if self.currentEvent == Events.START:
+            for _ in range(random.choice([1, 2])):
+                self.putRandomValue()
+            self.currentEvent = Events.WAIT_FOR_NEXT_MOVE
+        elif self.currentEvent == Events.WAIT_FOR_NEXT_MOVE:            
+            self.putRandomValue()
 
-            if len(validCells) == 0:
-                event = Events.NO_VALID_CELLS
-            else:
-                coords = random.choice(validCells)
-                grid[coords[0]][coords[1]].value = random.choice([2, 4])
-                event = Events.WAIT_FOR_NEXT_MOVE
+        print(f"[GAME] [TURN - {self.turn}] [STATUS - {self.currentEvent}]")
 
-    turn += 1
+        self.turn += 1
 
-    print(f"[GAME][TURN - {turn} ]")
-
-    drawGrid()
-
-    return turn, event
-
-def drawGrid():
-    for i in range(GRID_SIZE):
-        for j in range(GRID_SIZE):
-            grid[i][j].draw(screen)
 
 if __name__ == "__main__":
-    while running:
+    game = Game()
+
+    while not game.gameOver:
         pygame.event.clear()
         event = pygame.event.wait()
         if event.type == KEYDOWN and event.key == K_q:
-            running = False
+            game.gameOver = True
         if event.type == KEYDOWN and event.key == K_SPACE:
-            if turn == 0:
-                turn, currentEvent = updateGame(turn, currentEvent)
-        if turn != 0 and event.type == KEYDOWN and event.key == K_w :
-            grid = move(turn, Direction.UP, grid)
-        if turn != 0 and event.type == KEYDOWN and event.key == K_a :
-            grid = move(turn, Direction.LEFT, grid)
-        if turn != 0 and event.type == KEYDOWN and event.key == K_s :
-            grid = move(turn, Direction.DOWN, grid)
-        if turn != 0 and event.type == KEYDOWN and event.key == K_d :
-            grid = move(turn, Direction.RIGHT, grid)
+            game.updateGame()
+        if game.turn != 0 and event.type == KEYDOWN and event.key == K_w :
+            print(directions["up"])
+            game.move(directions["up"])
+        if game.turn != 0 and event.type == KEYDOWN and event.key == K_a :
+            print(directions["left"])
+            game.move(directions["left"])
+        if game.turn != 0 and event.type == KEYDOWN and event.key == K_s :
+            print(directions["down"])
+            game.move(directions["down"])
+        if game.turn != 0 and event.type == KEYDOWN and event.key == K_d :
+            print(directions["right"])
+            game.move(directions["right"])
 
-        updateGame(turn, currentEvent)
-
+        game.updateGame()
+        
         pygame.display.flip()
-        clock.tick(60)
-            
-
-    pygame.quit()
-    sys.exit()
+        game.clock.tick(60)
