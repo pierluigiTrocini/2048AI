@@ -21,7 +21,7 @@ class Game():
         self.grid = zeros((GRID_SIZE, GRID_SIZE))
         self.gameOver = False 
         self.turn = 0
-        self.currentEvent = Events.START
+        self.currentEvent = None
 
         # ---- pygame setup ---- #
         pygame.init()
@@ -98,7 +98,7 @@ if __name__ == "__main__":
         if event.type == KEYDOWN and event.key == K_q:
             game.gameOver = True
         if event.type == KEYDOWN and event.key == K_SPACE:
-            game.updateGame()
+            game.currentEvent = Events.START
         if game.turn != 0 and event.type == KEYDOWN and event.key == K_w :
             print(directions["up"])
             game.move(directions["up"])
