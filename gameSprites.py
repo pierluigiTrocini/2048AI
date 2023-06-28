@@ -3,6 +3,8 @@ import pygame
 FONT_SIZE = 30
 MARGIN = 5
 
+
+COLOR_NEW_ON_GRID = pygame.color.Color(255, 255, 255)
 COLOR_0 = pygame.color.Color(205,193,180)
 COLOR_2 = pygame.color.Color(238,228,218)
 COLOR_4 = pygame.color.Color(238,225,201)
@@ -23,6 +25,8 @@ class Cell:
         self.y = y * self.height
 
         self.color = COLOR_0
+
+        self.newOnGrid = True
 
     def setColor(self):
         if self.value == 0:

@@ -34,12 +34,15 @@ class Game():
         rotatedGrid = rot90(self.grid, direction)
         columns = [rotatedGrid[i, :] for i in range(GRID_SIZE) ]
 
-        newGrid = array([self.moveLeft(column) for column in columns])
+        newGrid = rot90(array([self.moveLeft(column) for column in columns]), -direction)
 
-        self.grid = rot90(newGrid, -direction)
+        print(f"[GAME] [ GRID CHANGED - {'no' if np.array_equal(self.grid, newGrid) else 'yes'} ]")
 
-    def isGameOver(self):
-        pass 
+        if not np.array_equal(self.grid, newGrid):
+            self.currentEvent = Events.GRID_CHANGED
+            self.grid = newGrid
+        else:
+            self.currentEvent = Events.WAIT_FOR_NEXT_MOVE
 
     def putRandomValue(self):
         i, j = (self.grid == 0).nonzero()
@@ -76,17 +79,41 @@ class Game():
                 Cell(i, j, self.grid[i][j], WINDOW_SIZE, GRID_SIZE).draw(self.screen)
 
     def updateGame(self):
-        self.drawGrid()
+        print(f"[GAME] [TURN - {self.turn}] [STATUS - {self.currentEvent}]")
+
         if self.currentEvent == Events.START:
             for _ in range(random.choice([1, 2])):
                 self.putRandomValue()
             self.currentEvent = Events.WAIT_FOR_NEXT_MOVE
-        elif self.currentEvent == Events.WAIT_FOR_NEXT_MOVE:            
+        elif self.currentEvent == Events.GRID_CHANGED:
             self.putRandomValue()
 
-        print(f"[GAME] [TURN - {self.turn}] [STATUS - {self.currentEvent}]")
+        if self.checkGameOver() == Events.GAME_OVER:
+            self.gameOver = True
+
+        self.drawGrid()
 
         self.turn += 1
+
+
+    def checkGameOver(self):
+        noMoves = True
+
+        #se trovo una griglia diversa passa a false
+
+        for dir in directions.values():
+            rotatedGrid = rot90(self.grid, dir)
+            columns = [rotatedGrid[i, :] for i in range(GRID_SIZE) ]
+
+            tmpGrid = rot90(array([self.moveLeft(column) for column in columns]), -dir)
+
+            if not np.array_equal( self.grid, tmpGrid ):
+                noMoves = False
+
+        if noMoves:
+            return Events.GAME_OVER
+        else:
+            return Events.WAIT_FOR_NEXT_MOVE
 
 
 if __name__ == "__main__":
@@ -95,24 +122,25 @@ if __name__ == "__main__":
     while not game.gameOver:
         pygame.event.clear()
         event = pygame.event.wait()
-        if event.type == KEYDOWN and event.key == K_q:
-            game.gameOver = True
-        if event.type == KEYDOWN and event.key == K_SPACE:
-            game.currentEvent = Events.START
-        if game.turn != 0 and event.type == KEYDOWN and event.key == K_w :
-            print(directions["up"])
-            game.move(directions["up"])
-        if game.turn != 0 and event.type == KEYDOWN and event.key == K_a :
-            print(directions["left"])
-            game.move(directions["left"])
-        if game.turn != 0 and event.type == KEYDOWN and event.key == K_s :
-            print(directions["down"])
-            game.move(directions["down"])
-        if game.turn != 0 and event.type == KEYDOWN and event.key == K_d :
-            print(directions["right"])
-            game.move(directions["right"])
-
-        game.updateGame()
+        if event.type == KEYDOWN:
+            if event.key == K_q:
+                game.gameOver = True
+            if event.key == K_SPACE:
+                game.currentEvent = Events.START
+            if game.turn != 0 and event.key == K_w :
+                print(directions["up"])
+                game.move(directions["up"])
+            if game.turn != 0 and event.key == K_a :
+                print(directions["left"])
+                game.move(directions["left"])
+            if game.turn != 0 and event.key == K_s :
+                print(directions["down"])
+                game.move(directions["down"])
+            if game.turn != 0 and event.key == K_d :
+                print(directions["right"])
+                game.move(directions["right"])
+            
+            game.updateGame()
         
         pygame.display.flip()
         game.clock.tick(60)
