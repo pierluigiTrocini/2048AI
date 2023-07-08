@@ -3,15 +3,9 @@ from pygame.locals import *
 from game import Game
 from settings import *
 
-from settings import Events
-
-
-# -------------------------- CONFIG ------------------------ #
-GRID_SIZE = 5
-WINDOW_SIZE = 100 * GRID_SIZE
-# ---------------------------------------------------------- #
 if __name__ == "__main__":
     game = Game()
+    # game.start(game.screen, WINDOW_SIZE)
 
     while not game.gameOver:
         pygame.event.clear()
@@ -21,16 +15,16 @@ if __name__ == "__main__":
                 game.gameOver = True
             if event.key == K_SPACE:
                 game.currentEvent = Events.START
-            if game.turn != 0 and event.key == K_w :
+            if game.turn != 0 and event.key == K_w or event.key == K_UP:
                 print(directions["up"])
                 game.move(directions["up"])
-            if game.turn != 0 and event.key == K_a :
+            if game.turn != 0 and event.key == K_a or event.key == K_LEFT:
                 print(directions["left"])
                 game.move(directions["left"])
-            if game.turn != 0 and event.key == K_s :
+            if game.turn != 0 and event.key == K_s or event.key == K_DOWN:
                 print(directions["down"])
                 game.move(directions["down"])
-            if game.turn != 0 and event.key == K_d :
+            if game.turn != 0 and event.key == K_d or event.key == K_RIGHT:
                 print(directions["right"])
                 game.move(directions["right"])
             
