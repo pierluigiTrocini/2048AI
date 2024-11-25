@@ -19,8 +19,8 @@ class Game(main.Py2048):
         self.MOVES = "urld"
     
     def AICommand(self):
-        self.AIManager.AIMove(self.grid)
-        return random.choice(self.MOVES)
+        return self.AIManager.AIMove(self.grid)
+
 
     def AIPlay(self):
         self.new_number(k = 2)

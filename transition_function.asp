@@ -1,0 +1,1 @@
+move(u) | move(r) | move(l) | move(d).
