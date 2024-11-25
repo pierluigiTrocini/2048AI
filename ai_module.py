@@ -9,7 +9,15 @@ import numpy
 
 class AIManager:
     def __init__(self) -> None:
-        self.SOLVER_PATH = "./dlv-2"
+        self.SOLVER_PATH: str = "./dlv-2"
+        self.ASP_RULES_PATH: str = "./transition_function.asp"
+
+        self.handler: DesktopHandler = DesktopHandler(DLV2DesktopService(self.SOLVER_PATH))
+        self.inputProgram: ASPInputProgram = ASPInputProgram()
+
+        self.inputProgram.add_files_path(self.ASP_RULES_PATH)
+
+        ASPMapper.get_instance().register_class(self.Cell)
 
     def generateFacts(self, grid: numpy.array) -> list:
         '''
@@ -32,6 +40,12 @@ class AIManager:
             2) DLV2 execution
             3) return move
         '''
+        self.inputProgram.add_objects_input(self.generateFacts(grid))
+
+        answerSets: AnswerSets = self.handler.start_sync()
+
+        # for _as in answerSets.get_answer_sets():
+        #     print(str(_as))
 
 
     
