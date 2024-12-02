@@ -1,4 +1,3 @@
-from xml.sax import handler
 from embasp.languages.predicate import Predicate
 from embasp.specializations.dlv2.desktop.dlv2_desktop_service import DLV2DesktopService
 from embasp.platforms.desktop.desktop_handler import DesktopHandler
@@ -7,6 +6,8 @@ from embasp.languages.asp.asp_input_program import ASPInputProgram
 from embasp.base.option_descriptor import OptionDescriptor
 from embasp.languages.asp.answer_sets import AnswerSet, AnswerSets
 import numpy
+
+N = 4
 
 class AIManager:
     SOLVER_PATH: str = "./dlv-2"
@@ -17,17 +18,35 @@ class AIManager:
 
     def generateFacts(self, grid: numpy.array) -> list:
         '''
-            Generation Process:
-            from Python syntax: grid[row][col] = value 
-            to ASP fact: cell(row, col, value).
+            From grid param, calculate the next (max) four grid,
+            then pass to DLV as logic facts.
         '''
         facts = []
-        for i in range(len(grid)):
-            for j in range(len(grid[0])):
-                facts.append(self.Cell(row = i, col = j, value = int(grid[i][j])))
+
+        def generateCells(grid, move: str):
+            for i in range(len(grid)):
+                for j in range(len(grid[0])):
+                    facts.append(self.Cell(move = move, row = i, col = j, value = int(grid[i][j])))
+
+        # Generate new grids
+        moveUp: numpy.array = self.generate_grid(grid = grid, direction = "u")
+        moveDown: numpy.array = self.generate_grid(grid = grid, direction = "d")
+        moveLeft: numpy.array = self.generate_grid(grid = grid, direction = "l")
+        moveRight: numpy.array = self.generate_grid(grid = grid, direction = "r")
+
+        if not numpy.array_equal(grid, moveUp):
+            generateCells(grid = moveUp, move = "u")
+        if not numpy.array_equal(grid, moveDown):
+            generateCells(grid = moveDown, move = "d")
+        if not numpy.array_equal(grid, moveLeft):
+            generateCells(grid = moveLeft, move = "l")
+        if not numpy.array_equal(grid, moveRight):
+            generateCells(grid = moveRight, move = "r")
         
+        generateCells(grid = grid, move = "current")
+
         return facts
-    
+
 
     def AIMove(self, grid: numpy.array) -> str:
         '''
@@ -49,11 +68,11 @@ class AIManager:
 
         answerSets: AnswerSets = handler.start_sync()
 
-        for answerSet in answerSets.get_answer_sets():
-            for atom in answerSet.get_atoms():
-                if isinstance(atom, self.Move):
-                    print(f"ANSWER SET -> {atom.get_move()}")
-                    return atom.get_move()
+        for ansSet in answerSets.get_answer_sets():
+            for atom in ansSet.get_atoms():
+                print(atom.__str__())
+
+        return "u"
 
 
     class Move(Predicate):
@@ -72,15 +91,20 @@ class AIManager:
         def __str__(self) -> str:
             return f"{self.predicate_name}({self.move})."
 
+
     class Cell(Predicate):
         predicate_name = "cell"
 
-        def __init__(self, row = None, col = None, value = None):
-            Predicate.__init__(self,[("row", int), ("col", int), ("value", int)]) 
+        def __init__(self, row = None, col = None, value = None, move = None):
+            Predicate.__init__(self,[("move"), ("row", int), ("col", int), ("value", int)]) 
 
+            self.move = move
             self.row = row
             self.col = col
             self.value = value
+        
+        def get_move(self):
+            return self.move
         
         def get_row(self):
             return self.row
@@ -90,6 +114,9 @@ class AIManager:
         
         def get_value(self):
             return self.value
+    
+        def set_move(self, m: str):
+            self.move = m
         
         def set_row(self, r: int):
             self.row = r
@@ -101,5 +128,42 @@ class AIManager:
             self.value = v
         
         def __str__(self) -> str:
-            return f"{self.predicate_name}({self.row},{self.col},{self.value})."
+            return f"{self.predicate_name}({self.get_move()},{self.get_row()},{self.get_col()},{self.get_value()})."
 
+    def generate_grid(self, grid: numpy.ndarray, direction: str) -> numpy.ndarray:
+        def compress_and_merge(row):
+            non_zero = row[row != 0]
+            merged = []
+            skip = False
+
+            for i in range(len(non_zero)):
+                if skip:
+                    skip = False
+                    continue
+                if i + 1 < len(non_zero) and non_zero[i] == non_zero[i + 1]:
+                    merged.append(non_zero[i] * 2)
+                    skip = True
+                else:
+                    merged.append(non_zero[i])
+
+            return numpy.array(merged + [0] * (len(row) - len(merged)))
+
+        def process(grid, reverse=False):
+            result = []
+            for row in grid:
+                if reverse:
+                    row = row[::-1]
+                processed_row = compress_and_merge(row)
+                if reverse:
+                    processed_row = processed_row[::-1]
+                result.append(processed_row)
+            return numpy.array(result)
+
+        if direction == "l":
+            return process(grid)
+        elif direction == "r":
+            return process(grid, reverse=True)
+        elif direction == "u":
+            return process(grid.T).T
+        elif direction == "d":
+            return process(grid.T, reverse=True).T

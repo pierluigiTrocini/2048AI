@@ -6,10 +6,8 @@ import random
 import time
 from ai_module import AIManager
 
-# Aggiungi il percorso del modulo 'pygame-2048' a sys.path
 sys.path.append(os.path.join(os.path.dirname(__file__), 'model'))
 
-# Ora importa la classe Py2048
 from model import main
 
 class Game(main.Py2048):
@@ -25,7 +23,11 @@ class Game(main.Py2048):
     def AIPlay(self):
         self.new_number(k = 2)
 
-        while True:
+        running = True
+
+        while running:
+            print(self.grid)
+
             self.draw_game()
             pygame.display.flip()
 
@@ -43,7 +45,8 @@ class Game(main.Py2048):
                 self.new_number()
             
             time.sleep(0.5)
-            
+
+            running = False
 
 
 if __name__ == '__main__':
