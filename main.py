@@ -1,7 +1,6 @@
 import sys
 import os
 import pygame
-from enum import Enum
 import random
 import time
 from ai_module import AIManager
@@ -14,10 +13,6 @@ class Game(main.Py2048):
     def __init__(self):
         super().__init__()
         self.AIManager = AIManager()
-        self.MOVES = "urld"
-    
-    def AICommand(self):
-        return self.AIManager.AIMove(self.grid)
 
 
     def AIPlay(self):
@@ -31,8 +26,8 @@ class Game(main.Py2048):
             self.draw_game()
             pygame.display.flip()
 
-            cmd = self.AICommand()
-            print(f"MOVE -> {cmd}")
+            cmd = self.AIManager.AIMove(self.grid)
+            print(f"move -> {cmd}")
 
             old_grid = self.grid.copy()
             self.make_move(cmd)
@@ -45,7 +40,7 @@ class Game(main.Py2048):
             if not all((self.grid == old_grid).flatten()):
                 self.new_number()
             
-            time.sleep(1)
+            time.sleep(0.5)
 
 if __name__ == '__main__':
     game = Game()

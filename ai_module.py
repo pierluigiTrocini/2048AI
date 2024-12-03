@@ -7,6 +7,8 @@ from embasp.base.option_descriptor import OptionDescriptor
 from embasp.languages.asp.answer_sets import AnswerSet, AnswerSets
 import numpy
 
+import random
+
 N = 4
 
 class AIManager:
@@ -77,8 +79,8 @@ class AIManager:
 
             for atom in optimalAS.get_atoms():
                 if isinstance(atom, self.Move):
-                    print(f"FROM ANSWER SET -> {atom.get_move()}")
-                    return atom.get_move()
+                    return str(atom.get_move()).replace('"','')
+
         finally:
             inputProgram.clear_all()
         
