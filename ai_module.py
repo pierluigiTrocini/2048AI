@@ -45,6 +45,9 @@ class AIManager:
         
         generateCells(grid = grid, move = "current")
 
+        # for f in facts:
+        #     print(f.__str__())
+
         return facts
 
 
@@ -55,24 +58,30 @@ class AIManager:
             2) DLV2 execution
             3) return move
         '''
-        handler = DesktopHandler(DLV2DesktopService(self.SOLVER_PATH))
+        try:
+            handler = DesktopHandler(DLV2DesktopService(self.SOLVER_PATH))
+            
+            ASPMapper.get_instance().register_class(self.Move)
+            ASPMapper.get_instance().register_class(self.Cell)
+
+            inputProgram = ASPInputProgram()
+            inputProgram.add_files_path(self.ASP_RULES_PATH)
+            inputProgram.add_objects_input(self.generateFacts(grid))
+
+            handler.add_program(inputProgram)
+
+            answerSets: AnswerSets = handler.start_sync()
+            optimalAS: AnswerSet = answerSets.get_optimal_answer_sets().pop()
+
+            print(optimalAS.get_answer_set())
+
+            for atom in optimalAS.get_atoms():
+                if isinstance(atom, self.Move):
+                    print(f"FROM ANSWER SET -> {atom.get_move()}")
+                    return atom.get_move()
+        finally:
+            inputProgram.clear_all()
         
-        ASPMapper.get_instance().register_class(self.Move)
-        ASPMapper.get_instance().register_class(self.Cell)
-
-        inputProgram = ASPInputProgram()
-        inputProgram.add_files_path(self.ASP_RULES_PATH)
-        inputProgram.add_objects_input(self.generateFacts(grid))
-
-        handler.add_program(inputProgram)
-
-        answerSets: AnswerSets = handler.start_sync()
-
-        for ansSet in answerSets.get_answer_sets():
-            for atom in ansSet.get_atoms():
-                print(atom.__str__())
-
-        return "u"
 
 
     class Move(Predicate):
@@ -128,7 +137,7 @@ class AIManager:
             self.value = v
         
         def __str__(self) -> str:
-            return f"{self.predicate_name}({self.get_move()},{self.get_row()},{self.get_col()},{self.get_value()})."
+            return f'{self.predicate_name}("{self.get_move()}",{self.get_row()},{self.get_col()},{self.get_value()}).'
 
     def generate_grid(self, grid: numpy.ndarray, direction: str) -> numpy.ndarray:
         def compress_and_merge(row):

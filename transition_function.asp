@@ -1,66 +1,8 @@
+% fase di guess: per ogni answer set deve esserci al massimo una mossa disponibile
+% in base agli stati ipotetici in input
+% (si esclude a priori la mossa relativa allo stato corrente)
+{move(X) : cell(X, _, _, _), X <> "current"} = 1.
 
-% Fatti di prova
-cell("d",1,3,0).
-cell("d",3,0,4).
-cell("u",1,1,0).
-cell("u",3,0,0).
-cell("d",3,3,0).
-cell("u",3,3,0).
-cell("d",3,2,0).
-cell("current",0,3,0).
-cell("r",0,2,0).
-cell("current",1,0,0).
-cell("u",3,2,0).
-cell("d",1,1,0).
-cell("u",0,1,0).
-cell("d",2,0,0).
-cell("d",0,3,0).
-cell("d",2,3,0).
-cell("r",2,3,2).
-cell("u",3,1,0).
-cell("current",2,1,0).
-cell("u",2,1,0).
-cell("r",2,2,0).
-cell("u",2,0,0).
-cell("r",2,0,0).
-cell("d",2,1,0).
-cell("u",1,0,0).
-cell("r",3,3,0).
-cell("r",0,0,0).
-cell("r",3,0,0).
-cell("u",0,0,4).
-cell("r",2,1,0).
-cell("r",1,1,0).
-cell("current",1,1,0).
-cell("current",3,0,0).
-cell("u",0,2,0).
-cell("u",1,2,0).
-cell("r",3,2,0).
-cell("r",0,3,2).
-cell("current",2,0,2).
-cell("u",0,3,0).
-cell("d",1,2,0).
-cell("u",2,3,0).
-cell("r",1,2,0).
-cell("u",1,3,0).
-cell("current",0,2,0).
-cell("d",2,2,0).
-cell("current",3,1,0).
-cell("r",0,1,0).
-cell("current",0,1,0).
-cell("d",0,0,0).
-cell("r",1,3,0).
-cell("current",0,0,2).
-cell("r",3,1,0).
-cell("d",0,1,0).
-cell("current",2,3,0).
-cell("current",1,3,0).
-cell("current",3,2,0).
-cell("current",2,2,0).
-cell("current",3,3,0).
-cell("r",1,0,0).
-cell("current",1,2,0).
-cell("d",1,0,0).
-cell("u",2,2,0).
-cell("d",0,2,0).
-cell("d",3,1,0).
+% Minimizzare il numero di celle non vuote
+non_vuote(N) :- move(Move), N = #count{X, Y : cell(Move, X, Y, Value), Value <> 0}.
+:~ non_vuote(N). [N@1]
