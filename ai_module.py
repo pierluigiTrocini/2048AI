@@ -73,13 +73,17 @@ class AIManager:
             handler.add_program(inputProgram)
 
             answerSets: AnswerSets = handler.start_sync()
-            optimalAS: AnswerSet = answerSets.get_optimal_answer_sets().pop()
 
-            print(optimalAS.get_answer_set())
+            if len(answerSets.get_optimal_answer_sets()) != 0:
+                optimalAS: AnswerSet = answerSets.get_optimal_answer_sets().pop()
 
-            for atom in optimalAS.get_atoms():
-                if isinstance(atom, self.Move):
-                    return str(atom.get_move()).replace('"','')
+                print(optimalAS.get_answer_set())
+
+                for atom in optimalAS.get_atoms():
+                    if isinstance(atom, self.Move):
+                        return str(atom.get_move()).replace('"','')
+            else: 
+                return ""
 
         finally:
             inputProgram.clear_all()

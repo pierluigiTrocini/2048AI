@@ -4,5 +4,7 @@
 {move(X) : cell(X, _, _, _), X <> "current"} = 1.
 
 % Minimizzare il numero di celle non vuote
-non_vuote(N) :- move(Move), N = #count{X, Y : cell(Move, X, Y, Value), Value <> 0}.
-:~ non_vuote(N). [N@1]
+:~ move(Move), N = #count{X, Y : cell(Move, X, Y, Value), Value <> 0}. [N@1]
+
+% Massimizzare il punteggio
+:~ move(Move), Score = #sum{Value : cell(Move, X, Y, Value)}. [-Score@2]
