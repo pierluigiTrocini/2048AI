@@ -27,7 +27,6 @@ class Game(main.Py2048):
             pygame.display.flip()
 
             cmd = self.AIManager.AIMove(self.grid)
-            print(f"move -> {cmd}")
 
             old_grid = self.grid.copy()
             self.make_move(cmd)
@@ -40,7 +39,7 @@ class Game(main.Py2048):
             if not all((self.grid == old_grid).flatten()):
                 self.new_number()
             
-            time.sleep(1)
+            # time.sleep(0.5)
 
 if __name__ == '__main__':
     game = Game()

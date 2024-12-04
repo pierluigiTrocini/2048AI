@@ -77,12 +77,15 @@ class AIManager:
             if len(answerSets.get_optimal_answer_sets()) != 0:
                 optimalAS: AnswerSet = answerSets.get_optimal_answer_sets().pop()
 
-                print(optimalAS.get_answer_set())
+                # print(optimalAS.get_answer_set())
 
                 for atom in optimalAS.get_atoms():
                     if isinstance(atom, self.Move):
-                        return str(atom.get_move()).replace('"','')
-            else: 
+                        move = str(atom.get_move()).replace('"','')
+                        print(f"[AI][ANSWER SET] MOSSA -> {move}")
+                        return move
+            else:
+                print(f"[AI][WARNING] Il modulo AI non ha prodotto risultati")
                 return ""
 
         finally:

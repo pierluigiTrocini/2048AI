@@ -1,0 +1,2397 @@
+pygame 2.6.0 (SDL 2.28.4, Python 3.10.12)
+Hello from the pygame community. https://www.pygame.org/contribute.html
+[[0 0 0 0]
+ [0 0 0 0]
+ [2 0 0 0]
+ [0 0 0 2]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 120366080
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> l
+[[0 0 0 0]
+ [0 0 0 0]
+ [2 0 0 0]
+ [2 0 0 0]]
+[[0 0 0 2]
+ [0 0 0 0]
+ [2 0 0 0]
+ [2 0 0 0]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 123952384
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> d
+[[0 0 0 0]
+ [0 0 0 0]
+ [0 0 0 0]
+ [4 0 0 2]]
+[[0 0 0 0]
+ [0 0 2 0]
+ [0 0 0 0]
+ [4 0 0 2]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 123759616
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> d
+[[0 0 0 0]
+ [0 0 0 0]
+ [0 0 0 0]
+ [4 0 2 2]]
+[[0 0 0 0]
+ [2 0 0 0]
+ [0 0 0 0]
+ [4 0 2 2]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 125451008
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> l
+[[0 0 0 0]
+ [2 0 0 0]
+ [0 0 0 0]
+ [4 4 0 0]]
+[[0 0 0 0]
+ [2 0 0 0]
+ [0 4 0 0]
+ [4 4 0 0]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 121728256
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> r
+[[0 0 0 0]
+ [0 0 0 2]
+ [0 0 0 4]
+ [0 0 0 8]]
+[[0 2 0 0]
+ [0 0 0 2]
+ [0 0 0 4]
+ [0 0 0 8]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 121064448
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> l
+[[2 0 0 0]
+ [2 0 0 0]
+ [4 0 0 0]
+ [8 0 0 0]]
+[[2 0 0 0]
+ [2 0 0 0]
+ [4 0 0 0]
+ [8 0 2 0]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 121180928
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> d
+[[0 0 0 0]
+ [4 0 0 0]
+ [4 0 0 0]
+ [8 0 2 0]]
+[[0 0 0 0]
+ [4 0 0 0]
+ [4 0 0 0]
+ [8 0 2 2]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 117449984
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> l
+[[0 0 0 0]
+ [4 0 0 0]
+ [4 0 0 0]
+ [8 4 0 0]]
+[[0 0 0 0]
+ [4 0 0 2]
+ [4 0 0 0]
+ [8 4 0 0]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 118072832
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> u
+[[8 4 0 2]
+ [8 0 0 0]
+ [0 0 0 0]
+ [0 0 0 0]]
+[[8 4 0 2]
+ [8 0 0 0]
+ [0 0 0 0]
+ [2 0 0 0]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 115476992
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> u
+[[16  4  0  2]
+ [ 2  0  0  0]
+ [ 0  0  0  0]
+ [ 0  0  0  0]]
+[[16  4  0  2]
+ [ 2  0  0  0]
+ [ 0  2  0  0]
+ [ 0  0  0  0]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 116035584
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> l
+[[16  4  2  0]
+ [ 2  0  0  0]
+ [ 2  0  0  0]
+ [ 0  0  0  0]]
+[[16  4  2  0]
+ [ 2  2  0  0]
+ [ 2  0  0  0]
+ [ 0  0  0  0]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 117396480
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> l
+[[16  4  2  0]
+ [ 4  0  0  0]
+ [ 2  0  0  0]
+ [ 0  0  0  0]]
+[[16  4  2  0]
+ [ 4  0  0  4]
+ [ 2  0  0  0]
+ [ 0  0  0  0]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 116911104
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> l
+[[16  4  2  0]
+ [ 8  0  0  0]
+ [ 2  0  0  0]
+ [ 0  0  0  0]]
+[[16  4  2  0]
+ [ 8  0  0  2]
+ [ 2  0  0  0]
+ [ 0  0  0  0]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 115088128
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> u
+[[16  4  2  2]
+ [ 8  0  0  0]
+ [ 2  0  0  0]
+ [ 0  0  0  0]]
+[[16  4  2  2]
+ [ 8  0  0  0]
+ [ 2  0  0  0]
+ [ 2  0  0  0]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 113179648
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> u
+[[16  4  2  2]
+ [ 8  0  0  0]
+ [ 4  0  0  0]
+ [ 0  0  0  0]]
+[[16  4  2  2]
+ [ 8  0  0  0]
+ [ 4  0  0  0]
+ [ 0  2  0  0]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 116162816
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> l
+[[16  4  4  0]
+ [ 8  0  0  0]
+ [ 4  0  0  0]
+ [ 2  0  0  0]]
+[[16  4  4  0]
+ [ 8  0  0  0]
+ [ 4  0  0  0]
+ [ 2  0  0  2]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 115497216
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> l
+[[16  8  0  0]
+ [ 8  0  0  0]
+ [ 4  0  0  0]
+ [ 4  0  0  0]]
+[[16  8  0  0]
+ [ 8  0  0  0]
+ [ 4  0  2  0]
+ [ 4  0  0  0]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 116546560
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> u
+[[16  8  2  0]
+ [ 8  0  0  0]
+ [ 8  0  0  0]
+ [ 0  0  0  0]]
+[[16  8  2  0]
+ [ 8  0  0  0]
+ [ 8  0  0  0]
+ [ 2  0  0  0]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 125584896
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> u
+[[16  8  2  0]
+ [16  0  0  0]
+ [ 2  0  0  0]
+ [ 0  0  0  0]]
+[[16  8  2  0]
+ [16  0  0  0]
+ [ 2  0  0  0]
+ [ 0  0  2  0]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 135590400
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> u
+[[32  8  4  0]
+ [ 2  0  0  0]
+ [ 0  0  0  0]
+ [ 0  0  0  0]]
+[[32  8  4  0]
+ [ 2  2  0  0]
+ [ 0  0  0  0]
+ [ 0  0  0  0]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 120405504
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> l
+[[32  8  4  0]
+ [ 4  0  0  0]
+ [ 0  0  0  0]
+ [ 0  0  0  0]]
+[[32  8  4  0]
+ [ 4  2  0  0]
+ [ 0  0  0  0]
+ [ 0  0  0  0]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 117614592
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> r
+[[ 0 32  8  4]
+ [ 0  0  4  2]
+ [ 0  0  0  0]
+ [ 0  0  0  0]]
+[[ 2 32  8  4]
+ [ 0  0  4  2]
+ [ 0  0  0  0]
+ [ 0  0  0  0]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 114565376
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> l
+[[ 2 32  8  4]
+ [ 4  2  0  0]
+ [ 0  0  0  0]
+ [ 0  0  0  0]]
+[[ 2 32  8  4]
+ [ 4  2  0  0]
+ [ 0  0  0  0]
+ [ 0  0  2  0]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 115124736
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> d
+[[ 0  0  0  0]
+ [ 0  0  0  0]
+ [ 2 32  8  0]
+ [ 4  2  2  4]]
+[[ 0  0  0  2]
+ [ 0  0  0  0]
+ [ 2 32  8  0]
+ [ 4  2  2  4]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 123694848
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> l
+[[ 2  0  0  0]
+ [ 0  0  0  0]
+ [ 2 32  8  0]
+ [ 4  4  4  0]]
+[[ 2  0  0  0]
+ [ 0  0  2  0]
+ [ 2 32  8  0]
+ [ 4  4  4  0]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 113091840
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> d
+[[ 0  0  0  0]
+ [ 0  0  2  0]
+ [ 4 32  8  0]
+ [ 4  4  4  0]]
+[[ 0  0  0  2]
+ [ 0  0  2  0]
+ [ 4 32  8  0]
+ [ 4  4  4  0]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 115120128
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> d
+[[ 0  0  0  0]
+ [ 0  0  2  0]
+ [ 0 32  8  0]
+ [ 8  4  4  2]]
+[[ 0  0  0  0]
+ [ 0  2  2  0]
+ [ 0 32  8  0]
+ [ 8  4  4  2]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 121545472
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> r
+[[ 0  0  0  0]
+ [ 0  0  0  4]
+ [ 0  0 32  8]
+ [ 0  8  8  2]]
+[[ 0  0  2  0]
+ [ 0  0  0  4]
+ [ 0  0 32  8]
+ [ 0  8  8  2]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 114229504
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> r
+[[ 0  0  0  2]
+ [ 0  0  0  4]
+ [ 0  0 32  8]
+ [ 0  0 16  2]]
+[[ 0  0  0  2]
+ [ 2  0  0  4]
+ [ 0  0 32  8]
+ [ 0  0 16  2]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 114347008
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> r
+[[ 0  0  0  2]
+ [ 0  0  2  4]
+ [ 0  0 32  8]
+ [ 0  0 16  2]]
+[[ 0  0  0  2]
+ [ 2  0  2  4]
+ [ 0  0 32  8]
+ [ 0  0 16  2]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 112924928
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> r
+[[ 0  0  0  2]
+ [ 0  0  4  4]
+ [ 0  0 32  8]
+ [ 0  0 16  2]]
+[[ 0  0  0  2]
+ [ 0  0  4  4]
+ [ 0  0 32  8]
+ [ 0  2 16  2]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 115545600
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> r
+[[ 0  0  0  2]
+ [ 0  0  0  8]
+ [ 0  0 32  8]
+ [ 0  2 16  2]]
+[[ 0  0  0  2]
+ [ 0  0  0  8]
+ [ 0  2 32  8]
+ [ 0  2 16  2]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 108322560
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> d
+[[ 0  0  0  0]
+ [ 0  0  0  2]
+ [ 0  0 32 16]
+ [ 0  4 16  2]]
+[[ 2  0  0  0]
+ [ 0  0  0  2]
+ [ 0  0 32 16]
+ [ 0  4 16  2]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 113825280
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> r
+[[ 0  0  0  2]
+ [ 0  0  0  2]
+ [ 0  0 32 16]
+ [ 0  4 16  2]]
+[[ 2  0  0  2]
+ [ 0  0  0  2]
+ [ 0  0 32 16]
+ [ 0  4 16  2]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 113276672
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> r
+[[ 0  0  0  4]
+ [ 0  0  0  2]
+ [ 0  0 32 16]
+ [ 0  4 16  2]]
+[[ 0  0  0  4]
+ [ 0  2  0  2]
+ [ 0  0 32 16]
+ [ 0  4 16  2]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 115229440
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> r
+[[ 0  0  0  4]
+ [ 0  0  0  4]
+ [ 0  0 32 16]
+ [ 0  4 16  2]]
+[[ 0  0  4  4]
+ [ 0  0  0  4]
+ [ 0  0 32 16]
+ [ 0  4 16  2]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 116722176
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> r
+[[ 0  0  0  8]
+ [ 0  0  0  4]
+ [ 0  0 32 16]
+ [ 0  4 16  2]]
+[[ 0  0  0  8]
+ [ 0  0  0  4]
+ [ 2  0 32 16]
+ [ 0  4 16  2]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 116191232
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> r
+[[ 0  0  0  8]
+ [ 0  0  0  4]
+ [ 0  2 32 16]
+ [ 0  4 16  2]]
+[[ 0  0  0  8]
+ [ 0  0  2  4]
+ [ 0  2 32 16]
+ [ 0  4 16  2]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 117057024
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> u
+[[ 0  2  2  8]
+ [ 0  4 32  4]
+ [ 0  0 16 16]
+ [ 0  0  0  2]]
+[[ 2  2  2  8]
+ [ 0  4 32  4]
+ [ 0  0 16 16]
+ [ 0  0  0  2]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 114461696
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> d
+[[ 0  0  0  8]
+ [ 0  0  2  4]
+ [ 0  2 32 16]
+ [ 2  4 16  2]]
+[[ 0  2  0  8]
+ [ 0  0  2  4]
+ [ 0  2 32 16]
+ [ 2  4 16  2]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 113207808
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> d
+[[ 0  0  0  8]
+ [ 0  0  2  4]
+ [ 0  4 32 16]
+ [ 2  4 16  2]]
+[[ 0  0  0  8]
+ [ 0  0  2  4]
+ [ 2  4 32 16]
+ [ 2  4 16  2]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 114477312
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> d
+[[ 0  0  0  8]
+ [ 0  0  2  4]
+ [ 0  0 32 16]
+ [ 4  8 16  2]]
+[[ 0  0  0  8]
+ [ 0  2  2  4]
+ [ 0  0 32 16]
+ [ 4  8 16  2]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 117604096
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> r
+[[ 0  0  0  8]
+ [ 0  0  4  4]
+ [ 0  0 32 16]
+ [ 4  8 16  2]]
+[[ 0  0  0  8]
+ [ 0  0  4  4]
+ [ 2  0 32 16]
+ [ 4  8 16  2]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 113912064
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> l
+[[ 8  0  0  0]
+ [ 8  0  0  0]
+ [ 2 32 16  0]
+ [ 4  8 16  2]]
+[[ 8  2  0  0]
+ [ 8  0  0  0]
+ [ 2 32 16  0]
+ [ 4  8 16  2]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 112613632
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> r
+[[ 0  0  8  2]
+ [ 0  0  0  8]
+ [ 0  2 32 16]
+ [ 4  8 16  2]]
+[[ 0  0  8  2]
+ [ 0  0  2  8]
+ [ 0  2 32 16]
+ [ 4  8 16  2]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 114434816
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> l
+[[ 8  2  0  0]
+ [ 2  8  0  0]
+ [ 2 32 16  0]
+ [ 4  8 16  2]]
+[[ 8  2  0  2]
+ [ 2  8  0  0]
+ [ 2 32 16  0]
+ [ 4  8 16  2]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 115863040
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> l
+[[ 8  4  0  0]
+ [ 2  8  0  0]
+ [ 2 32 16  0]
+ [ 4  8 16  2]]
+[[ 8  4  0  0]
+ [ 2  8  0  2]
+ [ 2 32 16  0]
+ [ 4  8 16  2]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 112606976
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> l
+[[ 8  4  0  0]
+ [ 2  8  2  0]
+ [ 2 32 16  0]
+ [ 4  8 16  2]]
+[[ 8  4  0  0]
+ [ 2  8  2  0]
+ [ 2 32 16  2]
+ [ 4  8 16  2]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 116459264
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> u
+[[ 8  4  2  4]
+ [ 4  8 32  0]
+ [ 4 32  0  0]
+ [ 0  8  0  0]]
+[[ 8  4  2  4]
+ [ 4  8 32  0]
+ [ 4 32  0  0]
+ [ 0  8  2  0]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 117173760
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> u
+[[ 8  4  2  4]
+ [ 8  8 32  0]
+ [ 0 32  2  0]
+ [ 0  8  0  0]]
+[[ 8  4  2  4]
+ [ 8  8 32  2]
+ [ 0 32  2  0]
+ [ 0  8  0  0]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 116216576
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> r
+[[ 8  4  2  4]
+ [ 0 16 32  2]
+ [ 0  0 32  2]
+ [ 0  0  0  8]]
+[[ 8  4  2  4]
+ [ 0 16 32  2]
+ [ 0  0 32  2]
+ [ 0  0  2  8]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 117504256
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> d
+[[ 0  0  0  0]
+ [ 0  0  2  4]
+ [ 0  4 64  4]
+ [ 8 16  2  8]]
+[[ 0  0  2  0]
+ [ 0  0  2  4]
+ [ 0  4 64  4]
+ [ 8 16  2  8]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 117494272
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> d
+[[ 0  0  0  0]
+ [ 0  0  4  0]
+ [ 0  4 64  8]
+ [ 8 16  2  8]]
+[[ 0  2  0  0]
+ [ 0  0  4  0]
+ [ 0  4 64  8]
+ [ 8 16  2  8]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 113820928
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> d
+[[ 0  0  0  0]
+ [ 0  2  4  0]
+ [ 0  4 64  0]
+ [ 8 16  2 16]]
+[[ 2  0  0  0]
+ [ 0  2  4  0]
+ [ 0  4 64  0]
+ [ 8 16  2 16]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 116238336
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> l
+[[ 2  0  0  0]
+ [ 2  4  0  0]
+ [ 4 64  0  0]
+ [ 8 16  2 16]]
+[[ 2  0  0  0]
+ [ 2  4  0  0]
+ [ 4 64  2  0]
+ [ 8 16  2 16]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 112334592
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> d
+[[ 0  0  0  0]
+ [ 4  4  0  0]
+ [ 4 64  0  0]
+ [ 8 16  4 16]]
+[[ 0  0  0  2]
+ [ 4  4  0  0]
+ [ 4 64  0  0]
+ [ 8 16  4 16]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 114232576
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> u
+[[ 8  4  4  2]
+ [ 8 64  0 16]
+ [ 0 16  0  0]
+ [ 0  0  0  0]]
+[[ 8  4  4  2]
+ [ 8 64  0 16]
+ [ 0 16  0  0]
+ [ 0  2  0  0]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 116539392
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> r
+[[ 0  8  8  2]
+ [ 0  8 64 16]
+ [ 0  0  0 16]
+ [ 0  0  0  2]]
+[[ 0  8  8  2]
+ [ 0  8 64 16]
+ [ 0  0  0 16]
+ [ 4  0  0  2]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 115820800
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> u
+[[ 4 16  8  2]
+ [ 0  0 64 32]
+ [ 0  0  0  2]
+ [ 0  0  0  0]]
+[[ 4 16  8  2]
+ [ 0  2 64 32]
+ [ 0  0  0  2]
+ [ 0  0  0  0]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 111463424
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> l
+[[ 4 16  8  2]
+ [ 2 64 32  0]
+ [ 2  0  0  0]
+ [ 0  0  0  0]]
+[[ 4 16  8  2]
+ [ 2 64 32  0]
+ [ 2  2  0  0]
+ [ 0  0  0  0]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 116562944
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> l
+[[ 4 16  8  2]
+ [ 2 64 32  0]
+ [ 4  0  0  0]
+ [ 0  0  0  0]]
+[[ 4 16  8  2]
+ [ 2 64 32  0]
+ [ 4  0  0  0]
+ [ 0  2  0  0]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 118069760
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> r
+[[ 4 16  8  2]
+ [ 0  2 64 32]
+ [ 0  0  0  4]
+ [ 0  0  0  2]]
+[[ 4 16  8  2]
+ [ 0  2 64 32]
+ [ 0  0  0  4]
+ [ 0  2  0  2]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 117288192
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> l
+[[ 4 16  8  2]
+ [ 2 64 32  0]
+ [ 4  0  0  0]
+ [ 4  0  0  0]]
+[[ 4 16  8  2]
+ [ 2 64 32  0]
+ [ 4  0  0  0]
+ [ 4  0  0  2]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 118634240
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> u
+[[ 4 16  8  4]
+ [ 2 64 32  0]
+ [ 8  0  0  0]
+ [ 0  0  0  0]]
+[[ 4 16  8  4]
+ [ 2 64 32  0]
+ [ 8  2  0  0]
+ [ 0  0  0  0]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 114510848
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> r
+[[ 4 16  8  4]
+ [ 0  2 64 32]
+ [ 0  0  8  2]
+ [ 0  0  0  0]]
+[[ 4 16  8  4]
+ [ 2  2 64 32]
+ [ 0  0  8  2]
+ [ 0  0  0  0]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 112955648
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> l
+[[ 4 16  8  4]
+ [ 4 64 32  0]
+ [ 8  2  0  0]
+ [ 0  0  0  0]]
+[[ 4 16  8  4]
+ [ 4 64 32  2]
+ [ 8  2  0  0]
+ [ 0  0  0  0]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 113157376
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> d
+[[ 0  0  0  0]
+ [ 0 16  0  0]
+ [ 8 64  8  4]
+ [ 8  2 32  2]]
+[[ 0  0  2  0]
+ [ 0 16  0  0]
+ [ 8 64  8  4]
+ [ 8  2 32  2]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 118408960
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> d
+[[ 0  0  0  0]
+ [ 0 16  2  0]
+ [ 0 64  8  4]
+ [16  2 32  2]]
+[[ 0  0  0  0]
+ [ 2 16  2  0]
+ [ 0 64  8  4]
+ [16  2 32  2]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 113659136
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> u
+[[ 2 16  2  4]
+ [16 64  8  2]
+ [ 0  2 32  0]
+ [ 0  0  0  0]]
+[[ 2 16  2  4]
+ [16 64  8  2]
+ [ 0  2 32  0]
+ [ 2  0  0  0]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 113223680
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> d
+[[ 0  0  0  0]
+ [ 2 16  2  0]
+ [16 64  8  4]
+ [ 2  2 32  2]]
+[[ 2  0  0  0]
+ [ 2 16  2  0]
+ [16 64  8  4]
+ [ 2  2 32  2]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 113106176
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> d
+[[ 0  0  0  0]
+ [ 4 16  2  0]
+ [16 64  8  4]
+ [ 2  2 32  2]]
+[[ 0  0  0  2]
+ [ 4 16  2  0]
+ [16 64  8  4]
+ [ 2  2 32  2]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 114476544
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> l
+[[ 2  0  0  0]
+ [ 4 16  2  0]
+ [16 64  8  4]
+ [ 4 32  2  0]]
+[[ 2  0  0  0]
+ [ 4 16  2  0]
+ [16 64  8  4]
+ [ 4 32  2  2]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 116336384
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> r
+[[ 0  0  0  2]
+ [ 0  4 16  2]
+ [16 64  8  4]
+ [ 0  4 32  4]]
+[[ 0  0  0  2]
+ [ 2  4 16  2]
+ [16 64  8  4]
+ [ 0  4 32  4]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 113311744
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> d
+[[ 0  0  0  0]
+ [ 0  4 16  0]
+ [ 2 64  8  4]
+ [16  4 32  8]]
+[[ 2  0  0  0]
+ [ 0  4 16  0]
+ [ 2 64  8  4]
+ [16  4 32  8]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 116478208
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> d
+[[ 0  0  0  0]
+ [ 0  4 16  0]
+ [ 4 64  8  4]
+ [16  4 32  8]]
+[[ 0  0  0  2]
+ [ 0  4 16  0]
+ [ 4 64  8  4]
+ [16  4 32  8]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 116079872
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> u
+[[ 4  4 16  2]
+ [16 64  8  4]
+ [ 0  4 32  8]
+ [ 0  0  0  0]]
+[[ 4  4 16  2]
+ [16 64  8  4]
+ [ 0  4 32  8]
+ [ 0  0  2  0]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 114880256
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> l
+[[ 8 16  2  0]
+ [16 64  8  4]
+ [ 4 32  8  0]
+ [ 2  0  0  0]]
+[[ 8 16  2  0]
+ [16 64  8  4]
+ [ 4 32  8  0]
+ [ 2  0  2  0]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 113430784
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> d
+[[ 8  0  0  0]
+ [16 16  2  0]
+ [ 4 64 16  0]
+ [ 2 32  2  4]]
+[[ 8  0  0  0]
+ [16 16  2  2]
+ [ 4 64 16  0]
+ [ 2 32  2  4]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 115080192
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> l
+[[ 8  0  0  0]
+ [32  4  0  0]
+ [ 4 64 16  0]
+ [ 2 32  2  4]]
+[[ 8  0  2  0]
+ [32  4  0  0]
+ [ 4 64 16  0]
+ [ 2 32  2  4]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 116408576
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> d
+[[ 8  0  0  0]
+ [32  4  2  0]
+ [ 4 64 16  0]
+ [ 2 32  2  4]]
+[[ 8  0  0  2]
+ [32  4  2  0]
+ [ 4 64 16  0]
+ [ 2 32  2  4]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 115277056
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> d
+[[ 8  0  0  0]
+ [32  4  2  0]
+ [ 4 64 16  2]
+ [ 2 32  2  4]]
+[[ 8  0  0  2]
+ [32  4  2  0]
+ [ 4 64 16  2]
+ [ 2 32  2  4]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 114850304
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> d
+[[ 8  0  0  0]
+ [32  4  2  0]
+ [ 4 64 16  4]
+ [ 2 32  2  4]]
+[[ 8  0  2  0]
+ [32  4  2  0]
+ [ 4 64 16  4]
+ [ 2 32  2  4]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 112121600
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> d
+[[ 8  0  0  0]
+ [32  4  4  0]
+ [ 4 64 16  0]
+ [ 2 32  2  8]]
+[[ 8  2  0  0]
+ [32  4  4  0]
+ [ 4 64 16  0]
+ [ 2 32  2  8]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 111326720
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> l
+[[ 8  2  0  0]
+ [32  8  0  0]
+ [ 4 64 16  0]
+ [ 2 32  2  8]]
+[[ 8  2  0  0]
+ [32  8  0  0]
+ [ 4 64 16  2]
+ [ 2 32  2  8]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 113637376
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> r
+[[ 0  0  8  2]
+ [ 0  0 32  8]
+ [ 4 64 16  2]
+ [ 2 32  2  8]]
+[[ 0  0  8  2]
+ [ 4  0 32  8]
+ [ 4 64 16  2]
+ [ 2 32  2  8]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 114339072
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> d
+[[ 0  0  8  2]
+ [ 0  0 32  8]
+ [ 8 64 16  2]
+ [ 2 32  2  8]]
+[[ 2  0  8  2]
+ [ 0  0 32  8]
+ [ 8 64 16  2]
+ [ 2 32  2  8]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 112913152
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> r
+[[ 0  2  8  2]
+ [ 0  0 32  8]
+ [ 8 64 16  2]
+ [ 2 32  2  8]]
+[[ 0  2  8  2]
+ [ 2  0 32  8]
+ [ 8 64 16  2]
+ [ 2 32  2  8]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 114641408
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> u
+[[ 2  2  8  2]
+ [ 8 64 32  8]
+ [ 2 32 16  2]
+ [ 0  0  2  8]]
+[[ 2  2  8  2]
+ [ 8 64 32  8]
+ [ 2 32 16  2]
+ [ 2  0  2  8]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 114142464
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> l
+[[ 4  8  2  0]
+ [ 8 64 32  8]
+ [ 2 32 16  2]
+ [ 4  8  0  0]]
+[[ 4  8  2  0]
+ [ 8 64 32  8]
+ [ 2 32 16  2]
+ [ 4  8  0  2]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 114124288
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> d
+[[ 4  8  0  0]
+ [ 8 64  2  0]
+ [ 2 32 32  8]
+ [ 4  8 16  4]]
+[[ 4  8  0  2]
+ [ 8 64  2  0]
+ [ 2 32 32  8]
+ [ 4  8 16  4]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 113837824
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> r
+[[ 0  4  8  2]
+ [ 0  8 64  2]
+ [ 0  2 64  8]
+ [ 4  8 16  4]]
+[[ 2  4  8  2]
+ [ 0  8 64  2]
+ [ 0  2 64  8]
+ [ 4  8 16  4]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 118668544
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> u
+[[  2   4   8   4]
+ [  4   8 128   8]
+ [  0   2  16   4]
+ [  0   8   0   0]]
+[[  2   4   8   4]
+ [  4   8 128   8]
+ [  0   2  16   4]
+ [  0   8   2   0]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 111957504
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> r
+[[  2   4   8   4]
+ [  4   8 128   8]
+ [  0   2  16   4]
+ [  0   0   8   2]]
+[[  2   4   8   4]
+ [  4   8 128   8]
+ [  2   2  16   4]
+ [  0   0   8   2]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 113968640
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> r
+[[  2   4   8   4]
+ [  4   8 128   8]
+ [  0   4  16   4]
+ [  0   0   8   2]]
+[[  2   4   8   4]
+ [  4   8 128   8]
+ [  0   4  16   4]
+ [  2   0   8   2]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 113468416
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> l
+[[  2   4   8   4]
+ [  4   8 128   8]
+ [  4  16   4   0]
+ [  2   8   2   0]]
+[[  2   4   8   4]
+ [  4   8 128   8]
+ [  4  16   4   0]
+ [  2   8   2   2]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 113144576
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> l
+[[  2   4   8   4]
+ [  4   8 128   8]
+ [  4  16   4   0]
+ [  2   8   4   0]]
+[[  2   4   8   4]
+ [  4   8 128   8]
+ [  4  16   4   0]
+ [  2   8   4   2]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 112812544
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> u
+[[  2   4   8   4]
+ [  8   8 128   8]
+ [  2  16   8   2]
+ [  0   8   0   0]]
+[[  2   4   8   4]
+ [  8   8 128   8]
+ [  2  16   8   2]
+ [  2   8   0   0]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 114338048
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> r
+[[  2   4   8   4]
+ [  0  16 128   8]
+ [  2  16   8   2]
+ [  0   0   2   8]]
+[[  2   4   8   4]
+ [  0  16 128   8]
+ [  2  16   8   2]
+ [  0   2   2   8]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 113340928
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> u
+[[  4   4   8   4]
+ [  0  32 128   8]
+ [  0   2   8   2]
+ [  0   0   2   8]]
+[[  4   4   8   4]
+ [  0  32 128   8]
+ [  0   2   8   2]
+ [  2   0   2   8]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 112826368
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> r
+[[  0   8   8   4]
+ [  0  32 128   8]
+ [  0   2   8   2]
+ [  0   0   4   8]]
+[[  0   8   8   4]
+ [  0  32 128   8]
+ [  2   2   8   2]
+ [  0   0   4   8]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 113720576
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> r
+[[  0   0  16   4]
+ [  0  32 128   8]
+ [  0   4   8   2]
+ [  0   0   4   8]]
+[[  0   0  16   4]
+ [  2  32 128   8]
+ [  0   4   8   2]
+ [  0   0   4   8]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 111627520
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> d
+[[  0   0  16   4]
+ [  0   0 128   8]
+ [  0  32   8   2]
+ [  2   4   4   8]]
+[[  0   0  16   4]
+ [  2   0 128   8]
+ [  0  32   8   2]
+ [  2   4   4   8]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 111957248
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> l
+[[ 16   4   0   0]
+ [  2 128   8   0]
+ [ 32   8   2   0]
+ [  2   8   8   0]]
+[[ 16   4   0   0]
+ [  2 128   8   0]
+ [ 32   8   2   0]
+ [  2   8   8   2]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 113420288
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> r
+[[  0   0  16   4]
+ [  0   2 128   8]
+ [  0  32   8   2]
+ [  0   2  16   2]]
+[[  0   2  16   4]
+ [  0   2 128   8]
+ [  0  32   8   2]
+ [  0   2  16   2]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 111350528
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> d
+[[  0   0  16   0]
+ [  0   4 128   4]
+ [  0  32   8   8]
+ [  0   2  16   4]]
+[[  0   0  16   0]
+ [  2   4 128   4]
+ [  0  32   8   8]
+ [  0   2  16   4]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 112442368
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> l
+[[ 16   0   0   0]
+ [  2   4 128   4]
+ [ 32  16   0   0]
+ [  2  16   4   0]]
+[[ 16   0   0   0]
+ [  2   4 128   4]
+ [ 32  16   0   0]
+ [  2  16   4   2]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 112143872
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> d
+[[ 16   0   0   0]
+ [  2   0   0   0]
+ [ 32   4 128   4]
+ [  2  32   4   2]]
+[[ 16   0   0   2]
+ [  2   0   0   0]
+ [ 32   4 128   4]
+ [  2  32   4   2]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 114484736
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> l
+[[ 16   2   0   0]
+ [  2   0   0   0]
+ [ 32   4 128   4]
+ [  2  32   4   2]]
+[[ 16   2   0   2]
+ [  2   0   0   0]
+ [ 32   4 128   4]
+ [  2  32   4   2]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 114247168
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> r
+[[  0   0  16   4]
+ [  0   0   0   2]
+ [ 32   4 128   4]
+ [  2  32   4   2]]
+[[  0   0  16   4]
+ [  2   0   0   2]
+ [ 32   4 128   4]
+ [  2  32   4   2]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 114151936
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> r
+[[  0   0  16   4]
+ [  0   0   0   4]
+ [ 32   4 128   4]
+ [  2  32   4   2]]
+[[  0   0  16   4]
+ [  0   2   0   4]
+ [ 32   4 128   4]
+ [  2  32   4   2]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 113049088
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> d
+[[  0   0   0   0]
+ [  0   2  16   4]
+ [ 32   4 128   8]
+ [  2  32   4   2]]
+[[  2   0   0   0]
+ [  0   2  16   4]
+ [ 32   4 128   8]
+ [  2  32   4   2]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 114324224
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> d
+[[  0   0   0   0]
+ [  2   2  16   4]
+ [ 32   4 128   8]
+ [  2  32   4   2]]
+[[  0   4   0   0]
+ [  2   2  16   4]
+ [ 32   4 128   8]
+ [  2  32   4   2]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 113092352
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> r
+[[  0   0   0   4]
+ [  0   4  16   4]
+ [ 32   4 128   8]
+ [  2  32   4   2]]
+[[  2   0   0   4]
+ [  0   4  16   4]
+ [ 32   4 128   8]
+ [  2  32   4   2]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 113577216
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> d
+[[  0   0   0   0]
+ [  2   0  16   8]
+ [ 32   8 128   8]
+ [  2  32   4   2]]
+[[  2   0   0   0]
+ [  2   0  16   8]
+ [ 32   8 128   8]
+ [  2  32   4   2]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 112297728
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> d
+[[  0   0   0   0]
+ [  4   0  16   0]
+ [ 32   8 128  16]
+ [  2  32   4   2]]
+[[  0   0   0   2]
+ [  4   0  16   0]
+ [ 32   8 128  16]
+ [  2  32   4   2]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 112180992
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> d
+[[  0   0   0   0]
+ [  4   0  16   2]
+ [ 32   8 128  16]
+ [  2  32   4   2]]
+[[  0   0   2   0]
+ [  4   0  16   2]
+ [ 32   8 128  16]
+ [  2  32   4   2]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 115532288
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> l
+[[  2   0   0   0]
+ [  4  16   2   0]
+ [ 32   8 128  16]
+ [  2  32   4   2]]
+[[  2   2   0   0]
+ [  4  16   2   0]
+ [ 32   8 128  16]
+ [  2  32   4   2]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 112488960
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> r
+[[  0   0   0   4]
+ [  0   4  16   2]
+ [ 32   8 128  16]
+ [  2  32   4   2]]
+[[  0   0   2   4]
+ [  0   4  16   2]
+ [ 32   8 128  16]
+ [  2  32   4   2]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 115571968
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> l
+[[  2   4   0   0]
+ [  4  16   2   0]
+ [ 32   8 128  16]
+ [  2  32   4   2]]
+[[  2   4   0   0]
+ [  4  16   2   2]
+ [ 32   8 128  16]
+ [  2  32   4   2]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 115572736
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> r
+[[  0   0   2   4]
+ [  0   4  16   4]
+ [ 32   8 128  16]
+ [  2  32   4   2]]
+[[  0   4   2   4]
+ [  0   4  16   4]
+ [ 32   8 128  16]
+ [  2  32   4   2]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 113343744
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> u
+[[ 32   8   2   8]
+ [  2   8  16  16]
+ [  0  32 128   2]
+ [  0   0   4   0]]
+[[ 32   8   2   8]
+ [  2   8  16  16]
+ [  2  32 128   2]
+ [  0   0   4   0]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 113296128
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> d
+[[  0   0   2   0]
+ [  0   0  16   8]
+ [ 32  16 128  16]
+ [  4  32   4   2]]
+[[  0   0   2   0]
+ [  2   0  16   8]
+ [ 32  16 128  16]
+ [  4  32   4   2]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 113480448
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> l
+[[  2   0   0   0]
+ [  2  16   8   0]
+ [ 32  16 128  16]
+ [  4  32   4   2]]
+[[  2   0   0   2]
+ [  2  16   8   0]
+ [ 32  16 128  16]
+ [  4  32   4   2]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 116074496
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> d
+[[  0   0   0   0]
+ [  4   0   8   2]
+ [ 32  32 128  16]
+ [  4  32   4   2]]
+[[  0   0   0   0]
+ [  4   2   8   2]
+ [ 32  32 128  16]
+ [  4  32   4   2]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 113670656
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> u
+[[  4   2   8   2]
+ [ 32  64 128  16]
+ [  4   0   4   2]
+ [  0   0   0   0]]
+[[  4   2   8   2]
+ [ 32  64 128  16]
+ [  4   0   4   2]
+ [  0   2   0   0]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 114819584
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> l
+[[  4   2   8   2]
+ [ 32  64 128  16]
+ [  8   2   0   0]
+ [  2   0   0   0]]
+[[  4   2   8   2]
+ [ 32  64 128  16]
+ [  8   2   0   2]
+ [  2   0   0   0]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 114253056
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> l
+[[  4   2   8   2]
+ [ 32  64 128  16]
+ [  8   4   0   0]
+ [  2   0   0   0]]
+[[  4   2   8   2]
+ [ 32  64 128  16]
+ [  8   4   0   0]
+ [  2   0   0   2]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 114228480
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> l
+[[  4   2   8   2]
+ [ 32  64 128  16]
+ [  8   4   0   0]
+ [  4   0   0   0]]
+[[  4   2   8   2]
+ [ 32  64 128  16]
+ [  8   4   2   0]
+ [  4   0   0   0]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 117025280
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> r
+[[  4   2   8   2]
+ [ 32  64 128  16]
+ [  0   8   4   2]
+ [  0   0   0   4]]
+[[  4   2   8   2]
+ [ 32  64 128  16]
+ [  0   8   4   2]
+ [  0   0   2   4]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 111307520
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> l
+[[  4   2   8   2]
+ [ 32  64 128  16]
+ [  8   4   2   0]
+ [  2   4   0   0]]
+[[  4   2   8   2]
+ [ 32  64 128  16]
+ [  8   4   2   0]
+ [  2   4   2   0]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 111965440
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> u
+[[  4   2   8   2]
+ [ 32  64 128  16]
+ [  8   8   4   0]
+ [  2   0   0   0]]
+[[  4   2   8   2]
+ [ 32  64 128  16]
+ [  8   8   4   2]
+ [  2   0   0   0]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 113117696
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> r
+[[  4   2   8   2]
+ [ 32  64 128  16]
+ [  0  16   4   2]
+ [  0   0   0   2]]
+[[  4   2   8   2]
+ [ 32  64 128  16]
+ [  0  16   4   2]
+ [  0   2   0   2]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 112699136
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> d
+[[  0   2   0   0]
+ [  0  64   8   2]
+ [  4  16 128  16]
+ [ 32   2   4   4]]
+[[  0   2   2   0]
+ [  0  64   8   2]
+ [  4  16 128  16]
+ [ 32   2   4   4]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 114104320
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> r
+[[  0   0   0   4]
+ [  0  64   8   2]
+ [  4  16 128  16]
+ [  0  32   2   8]]
+[[  0   2   0   4]
+ [  0  64   8   2]
+ [  4  16 128  16]
+ [  0  32   2   8]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 115708416
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> d
+[[  0   2   0   4]
+ [  0  64   8   2]
+ [  0  16 128  16]
+ [  4  32   2   8]]
+[[  2   2   0   4]
+ [  0  64   8   2]
+ [  0  16 128  16]
+ [  4  32   2   8]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 115129088
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> r
+[[  0   0   4   4]
+ [  0  64   8   2]
+ [  0  16 128  16]
+ [  4  32   2   8]]
+[[  0   0   4   4]
+ [  2  64   8   2]
+ [  0  16 128  16]
+ [  4  32   2   8]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 114648320
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> r
+[[  0   0   0   8]
+ [  2  64   8   2]
+ [  0  16 128  16]
+ [  4  32   2   8]]
+[[  2   0   0   8]
+ [  2  64   8   2]
+ [  0  16 128  16]
+ [  4  32   2   8]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 116160000
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> d
+[[  0   0   0   8]
+ [  0  64   8   2]
+ [  4  16 128  16]
+ [  4  32   2   8]]
+[[  0   0   0   8]
+ [  2  64   8   2]
+ [  4  16 128  16]
+ [  4  32   2   8]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 111858432
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> d
+[[  0   0   0   8]
+ [  0  64   8   2]
+ [  2  16 128  16]
+ [  8  32   2   8]]
+[[  0   0   2   8]
+ [  0  64   8   2]
+ [  2  16 128  16]
+ [  8  32   2   8]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 111951104
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> l
+[[  2   8   0   0]
+ [ 64   8   2   0]
+ [  2  16 128  16]
+ [  8  32   2   8]]
+[[  2   8   0   2]
+ [ 64   8   2   0]
+ [  2  16 128  16]
+ [  8  32   2   8]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 113554176
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> d
+[[  2   0   0   0]
+ [ 64  16   2   2]
+ [  2  16 128  16]
+ [  8  32   2   8]]
+[[  2   2   0   0]
+ [ 64  16   2   2]
+ [  2  16 128  16]
+ [  8  32   2   8]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 116182272
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> l
+[[  4   0   0   0]
+ [ 64  16   4   0]
+ [  2  16 128  16]
+ [  8  32   2   8]]
+[[  4   0   2   0]
+ [ 64  16   4   0]
+ [  2  16 128  16]
+ [  8  32   2   8]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 113669376
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> d
+[[  4   0   2   0]
+ [ 64   0   4   0]
+ [  2  32 128  16]
+ [  8  32   2   8]]
+[[  4   0   2   0]
+ [ 64   0   4   2]
+ [  2  32 128  16]
+ [  8  32   2   8]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 112934912
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> d
+[[  4   0   2   0]
+ [ 64   0   4   2]
+ [  2   0 128  16]
+ [  8  64   2   8]]
+[[  4   2   2   0]
+ [ 64   0   4   2]
+ [  2   0 128  16]
+ [  8  64   2   8]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 111959040
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> r
+[[  0   0   4   4]
+ [  0  64   4   2]
+ [  0   2 128  16]
+ [  8  64   2   8]]
+[[  0   0   4   4]
+ [  0  64   4   2]
+ [  2   2 128  16]
+ [  8  64   2   8]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 112916736
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> l
+[[  8   0   0   0]
+ [ 64   4   2   0]
+ [  4 128  16   0]
+ [  8  64   2   8]]
+[[  8   0   0   2]
+ [ 64   4   2   0]
+ [  4 128  16   0]
+ [  8  64   2   8]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 113199616
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> l
+[[  8   2   0   0]
+ [ 64   4   2   0]
+ [  4 128  16   0]
+ [  8  64   2   8]]
+[[  8   2   0   0]
+ [ 64   4   2   2]
+ [  4 128  16   0]
+ [  8  64   2   8]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 115278336
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> l
+[[  8   2   0   0]
+ [ 64   4   4   0]
+ [  4 128  16   0]
+ [  8  64   2   8]]
+[[  8   2   0   0]
+ [ 64   4   4   0]
+ [  4 128  16   2]
+ [  8  64   2   8]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 113047808
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> l
+[[  8   2   0   0]
+ [ 64   8   0   0]
+ [  4 128  16   2]
+ [  8  64   2   8]]
+[[  8   2   0   0]
+ [ 64   8   2   0]
+ [  4 128  16   2]
+ [  8  64   2   8]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 111546368
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> r
+[[  0   0   8   2]
+ [  0  64   8   2]
+ [  4 128  16   2]
+ [  8  64   2   8]]
+[[  2   0   8   2]
+ [  0  64   8   2]
+ [  4 128  16   2]
+ [  8  64   2   8]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 114284800
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> d
+[[  0   0   0   0]
+ [  2  64  16   2]
+ [  4 128  16   4]
+ [  8  64   2   8]]
+[[  2   0   0   0]
+ [  2  64  16   2]
+ [  4 128  16   4]
+ [  8  64   2   8]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 113508864
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> d
+[[  0   0   0   0]
+ [  4  64   0   2]
+ [  4 128  32   4]
+ [  8  64   2   8]]
+[[  0   0   0   2]
+ [  4  64   0   2]
+ [  4 128  32   4]
+ [  8  64   2   8]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 113202944
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> d
+[[  0   0   0   0]
+ [  0  64   0   4]
+ [  8 128  32   4]
+ [  8  64   2   8]]
+[[  0   0   0   0]
+ [  2  64   0   4]
+ [  8 128  32   4]
+ [  8  64   2   8]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 112965632
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> d
+[[  0   0   0   0]
+ [  0  64   0   0]
+ [  2 128  32   8]
+ [ 16  64   2   8]]
+[[  0   2   0   0]
+ [  0  64   0   0]
+ [  2 128  32   8]
+ [ 16  64   2   8]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 114541312
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> d
+[[  0   2   0   0]
+ [  0  64   0   0]
+ [  2 128  32   0]
+ [ 16  64   2  16]]
+[[  0   2   0   0]
+ [  0  64   0   0]
+ [  2 128  32   4]
+ [ 16  64   2  16]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 116043520
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> u
+[[  2   2  32   4]
+ [ 16  64   2  16]
+ [  0 128   0   0]
+ [  0  64   0   0]]
+[[  2   2  32   4]
+ [ 16  64   2  16]
+ [  0 128   0   0]
+ [  2  64   0   0]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 114670080
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> u
+[[  2   2  32   4]
+ [ 16  64   2  16]
+ [  2 128   0   0]
+ [  0  64   0   0]]
+[[  2   2  32   4]
+ [ 16  64   2  16]
+ [  2 128   2   0]
+ [  0  64   0   0]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 115082240
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> r
+[[  0   4  32   4]
+ [ 16  64   2  16]
+ [  0   2 128   2]
+ [  0   0   0  64]]
+[[  0   4  32   4]
+ [ 16  64   2  16]
+ [  0   2 128   2]
+ [  0   2   0  64]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 115855872
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> u
+[[ 16   4  32   4]
+ [  0  64   2  16]
+ [  0   4 128   2]
+ [  0   0   0  64]]
+[[ 16   4  32   4]
+ [  0  64   2  16]
+ [  2   4 128   2]
+ [  0   0   0  64]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 112029696
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> l
+[[ 16   4  32   4]
+ [ 64   2  16   0]
+ [  2   4 128   2]
+ [ 64   0   0   0]]
+[[ 16   4  32   4]
+ [ 64   2  16   0]
+ [  2   4 128   2]
+ [ 64   2   0   0]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 113980672
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> u
+[[ 16   4  32   4]
+ [ 64   2  16   2]
+ [  2   4 128   0]
+ [ 64   2   0   0]]
+[[ 16   4  32   4]
+ [ 64   2  16   2]
+ [  2   4 128   2]
+ [ 64   2   0   0]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 116016640
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> u
+[[ 16   4  32   4]
+ [ 64   2  16   4]
+ [  2   4 128   0]
+ [ 64   2   0   0]]
+[[ 16   4  32   4]
+ [ 64   2  16   4]
+ [  2   4 128   0]
+ [ 64   2   0   2]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 115113728
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> l
+[[ 16   4  32   4]
+ [ 64   2  16   4]
+ [  2   4 128   0]
+ [ 64   4   0   0]]
+[[ 16   4  32   4]
+ [ 64   2  16   4]
+ [  2   4 128   2]
+ [ 64   4   0   0]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 113045504
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> u
+[[ 16   4  32   8]
+ [ 64   2  16   2]
+ [  2   8 128   0]
+ [ 64   0   0   0]]
+[[ 16   4  32   8]
+ [ 64   2  16   2]
+ [  2   8 128   0]
+ [ 64   2   0   0]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 113068544
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> d
+[[ 16   4   0   0]
+ [ 64   2  32   0]
+ [  2   8  16   8]
+ [ 64   2 128   2]]
+[[ 16   4   0   0]
+ [ 64   2  32   2]
+ [  2   8  16   8]
+ [ 64   2 128   2]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 114381056
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> u
+[[ 16   4  32   2]
+ [ 64   2  16   8]
+ [  2   8 128   2]
+ [ 64   2   0   0]]
+[[ 16   4  32   2]
+ [ 64   2  16   8]
+ [  2   8 128   2]
+ [ 64   2   2   0]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 113458688
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> r
+[[ 16   4  32   2]
+ [ 64   2  16   8]
+ [  2   8 128   2]
+ [  0   0  64   4]]
+[[ 16   4  32   2]
+ [ 64   2  16   8]
+ [  2   8 128   2]
+ [  2   0  64   4]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 114055424
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> d
+[[  0   0  32   2]
+ [ 16   4  16   8]
+ [ 64   2 128   2]
+ [  4   8  64   4]]
+[[  0   2  32   2]
+ [ 16   4  16   8]
+ [ 64   2 128   2]
+ [  4   8  64   4]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 113511680
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> l
+[[  2  32   2   0]
+ [ 16   4  16   8]
+ [ 64   2 128   2]
+ [  4   8  64   4]]
+[[  2  32   2   2]
+ [ 16   4  16   8]
+ [ 64   2 128   2]
+ [  4   8  64   4]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 111886080
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][ANSWER SET] MOSSA -> l
+[[  2  32   4   0]
+ [ 16   4  16   8]
+ [ 64   2 128   2]
+ [  4   8  64   4]]
+[[  2  32   4   2]
+ [ 16   4  16   8]
+ [ 64   2 128   2]
+ [  4   8  64   4]]
+./dlv-2 ./transition_function.asp --stdin
+Total time : 133471744
+
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+ANTLR runtime and generated code versions disagree: 4.7!=4.9.2
+[AI][WARNING] Il modulo AI non ha prodotto risultati
+[[  2  32   4   2]
+ [ 16   4  16   8]
+ [ 64   2 128   2]
+ [  4   8  64   4]]
+GAME OVER!
