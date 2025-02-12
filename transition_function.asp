@@ -4,36 +4,28 @@
 {move(X) : cell(X, _, _, _), X <> "current"} = 1.
 
 dim(N) :- N = #max{X : cell(_, X, _, _)}.
-corner(0, 0).
-corner(0, N) :- dim(N).
-corner(N, 0) :- dim(N).
-corner(N, N) :- dim(N).
+fixed_corner(0, 0).
 
-% si calcola la cella con valore massimo
-max_value(Move, X, Y, Value) :- move(Move), cell(Move, X, Y, Value), Value == #max{V : cell(Move, Row, Col, V)}.
+% CALCOLI PRELIMINARI - per atomi che serviranno nei weak constraints
+% determina la cella con valore massimo per la mossa M
+max_value(X, Y, Value) :- move(Move), cell(Move, X, Y, Value), Value == #max{V, X, Y : cell(Move, X, Y, V), V <> 0}.
 
-% calcolo delle distanze (manhattan) della cella con valore massimo a ogni angolo
-from_corner(Max_X, Max_Y, Corner_X, Corner_Y, Distance) :- max_value(_, Max_X, Max_Y, _), corner(Corner_X, Corner_Y),
-    &abs(Max_X - Corner_X; DistanceX), &abs(Max_Y - Corner_Y; DistanceY), 
-    Distance = DistanceX + DistanceY.
+% determina la cella con valore massimo per lo stato corrente
+current_max(X, Y, Value) :- cell("current", X, Y, Value), Value == #max{V, X, Y : cell("current", X, Y, V), V <> 0}.
 
-% Minimizzare la distanza (manhattan) tra la cella con valore massimo e l'angolo più vicino
-:~ MinimumDistance = #min{Distance : from_corner(_, _, _, _, Distance)}. [MinimumDistance@1]
+% determinare la distanza manhattan tra max_value e fixed_corner
+from_corner(X, Y, Distance) :- max_value(X, Y, _), fixed_corner(Fixed_x, Fixed_y), 
+    &abs(X - Fixed_x; Dx), &abs(Y - Fixed_y; Dy), Distance = Dx + Dy.
 
-% Minimizzare la distanza (manhattan) tra coppie di celle con valore (v1 == 2 * v2)
-:~ move(M), cell(Move, X, Y, V1), cell(Move, X1, Y1, V2),
-    X <> X1, Y <> Y1,
-    V1 == 2 * V2,
-    &abs(X - X1; Dx), &abs(Y - Y1; Dy), Distance = Dx + Dy. [Distance@1]
+% determinare la cella con valore massimo più vicina all'angolo
+minimum_distance_max_value(X, Y, Distance) :- from_corner(X, Y, Distance), Distance == #min{Dist : from_corner(R, C, Dist)}.
 
-% Minimizzare la distanza (manhattan) tra celle dello stesso valore
-:~ move(M), cell(Move, X, Y, Value), cell(Move, X1, Y1, Value), 
-    X <> X1, Y <> Y1, &abs(X - X1; Dx), &abs(Y - Y1; Dy), 
-    D = Dx + Dy. [D@2]
+% minimizzare la distanza minima tra max_value e fixed_corner
+:~ minimum_distance_max_value(X, Y, Distance). [Distance@1]
 
+% celle adiacenti a max_value (la cella alla minore distanza) devono avere valore maggiore o uguale a Vmax / 2
+:~ move(Move), minimum_distance_max_value(Max_x, Max_y, _), cell(Move, Cell_x, Cell_y, Value), max_value(Max_x, Max_y, Vmax),
+    Max_x <> Cell_x, Max_y <> Cell_y, &abs(Max_x - Cell_x; Dx), &abs(Max_y - Cell_y; Dy), Dy
 
-% Massimizzare il punteggio (la somma dei valori delle celle)
-:~ Score = #sum{Value : move(M), cell(Move, X, Y, Value)}. [-Score@3]
-
-% Minimizzare il numero di celle non vuote
-:~ move(Move), N = #count{X, Y : cell(Move, X, Y, Value)}. [N@3]
+% celle non adiacenti a max_value devono avere valore compreso (Value / 2) oppure Value
+% minimizzare il numero di celle piene (Value <> 0)
