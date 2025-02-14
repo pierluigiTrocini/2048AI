@@ -21,11 +21,27 @@ from_corner(X, Y, Distance) :- max_value(X, Y, _), fixed_corner(Fixed_x, Fixed_y
 minimum_distance_max_value(X, Y, Distance) :- from_corner(X, Y, Distance), Distance == #min{Dist : from_corner(R, C, Dist)}.
 
 % minimizzare la distanza minima tra max_value e fixed_corner
-:~ minimum_distance_max_value(X, Y, Distance). [Distance@1]
+:~ minimum_distance_max_value(X, Y, Distance). [(Distance*Distance)@1]
 
-% celle adiacenti a max_value (la cella alla minore distanza) devono avere valore maggiore o uguale a Vmax / 2
-:~ move(Move), minimum_distance_max_value(Max_x, Max_y, _), cell(Move, Cell_x, Cell_y, Value), max_value(Max_x, Max_y, Vmax),
-    Max_x <> Cell_x, Max_y <> Cell_y, &abs(Max_x - Cell_x; Dx), &abs(Max_y - Cell_y; Dy), Dy
+% non vorrei che, data una cella con valore V, la cella alla sua destra abbia un valore diverso da V / 2
+:~ move(Move), cell(Move, X, Y, V), cell(Move, X, Y2, V2), Y2 == (Y + 1), V2 <> V / 2. [1@2, X, Y]
 
-% celle non adiacenti a max_value devono avere valore compreso (Value / 2) oppure Value
+% non vorrei che, data una cella con valore V, la cella sotto di essa abbia un valore diverso da V / 2
+:~ move(Move), cell(Move, X, Y, V), cell(Move, X2, Y, V2), X2 == (X + 1), V2 <> V / 2. [1@2, X, Y]
+
+% non vorrei che, data una cella con valore V, la cella alla sua sinistra abbia un valore diverso da V * 2
+:~ move(Move), cell(Move, X, Y, V), cell(Move, X, Y2, V2), Y2 == (Y - 1), V2 <> V * 2. [1@2, X, Y]
+
+% non vorrei che, data una cella con valore V, la cella sopra ad essa abbia un valore diverso da V * 2
+:~ move(Move), cell(Move, X, Y, V), cell(Move, X2, Y, V2), X2 == (X - 1), V2 <> V * 2. [1@2, X, Y]
+
+% data la mossa Move, non vorrei che minimum_distance_max_value abbia celle sopra di essa
+:~ move(Move), minimum_distance_max_value(X, Y, _), cell(Move, X, Y1, _), Y1 == (Y - 1). [1@3, X, Y]
+
+% data la mossa Move, non vorrei che minimum_distance_max_value abbia celle a sinistra di essa
+:~ move(Move), minimum_distance_max_value(X, Y, _), cell(Move, X1, Y, _), X1 == (X - 1). [1@3, X, Y]
+
+
+
 % minimizzare il numero di celle piene (Value <> 0)
+:~ move(Move), N = #count{X, Y : cell(Move, X, Y, Value), Value <> 0}. [N@4]
