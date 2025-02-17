@@ -28,7 +28,7 @@ class AIManager:
         def generateCells(grid, move: str):
             for i in range(len(grid)):
                 for j in range(len(grid[0])):
-                    facts.append(self.Cell(move = move, row = i, col = j, value = int(grid[i][j])))
+                    facts.append(self.Cell(move = move, row = (i + 1), col = (j + 1), value = int(grid[i][j])))
 
         # Generate new grids
         moveUp: numpy.array = self.generate_grid(grid = grid, direction = "u")
@@ -83,6 +83,7 @@ class AIManager:
                     if isinstance(atom, self.Move):
                         move = str(atom.get_move()).replace('"','')
                         print(f"[AI][ANSWER SET] MOSSA -> {move}")
+                        print(f"[AI][ANSWER SET] Costi dei constraint -> {optimalAS.get_weights().__str__()}")
                         return move
             else:
                 print(f"[AI][WARNING] Il modulo AI non ha prodotto risultati")
