@@ -6,6 +6,7 @@ import pygame
 import random
 import time
 from ai_module import AIManager
+from ai_module import MinimaxNode
 
 sys.path.append(os.path.join(os.path.dirname(__file__), 'model'))
 
@@ -42,11 +43,17 @@ class Game(main.Py2048):
                 self.new_number()
             
             # time.sleep(0.25)
+    
+    def Expectiminimax(self):
+        self.new_number(k = 2)
+        MinimaxNode(grid = self.grid, state = "current", depth = 0, type = MinimaxNode.Type.RANDOM_TILE, evaluation = 0)
 
 if __name__ == '__main__':
     game = Game()
 
-    game.AIPlay()
+    # game.AIPlay()
+
+    game.Expectiminimax()
 
             
 
