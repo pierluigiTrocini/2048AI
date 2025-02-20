@@ -1,19 +1,17 @@
 from enum import Enum
+import math
 import sys
 from embasp.languages.predicate import Predicate
 from embasp.specializations.dlv2.desktop.dlv2_desktop_service import DLV2DesktopService
 from embasp.platforms.desktop.desktop_handler import DesktopHandler
 from embasp.languages.asp.asp_mapper import ASPMapper
 from embasp.languages.asp.asp_input_program import ASPInputProgram
-from embasp.base.option_descriptor import OptionDescriptor
 from embasp.languages.asp.answer_sets import AnswerSet, AnswerSets
 import numpy
 
 import random
 
 N = 4
-
-EXPECTIMINIMAX_DEPTH = 2
 
 def generateCells(grid: numpy.array, move: str):
     facts = []
@@ -195,6 +193,8 @@ class Cell(Predicate):
     
 
 class MinimaxNode():
+    MAX_MIN_DEPTH = 3
+
     class Type(Enum):
         AI_MOVE = 0,
         RANDOM_TILE = 1,
@@ -202,27 +202,59 @@ class MinimaxNode():
     def __init__(self, grid: numpy.array, state: str, depth: int, type: Type, evaluation: int):
         self.type: MinimaxNode.Type = type
         self.state: str = state
-        self.evaluation: dict = self.DLV_Evaluation(grid = grid, state = self.state) if self.type == MinimaxNode.Type.AI_MOVE else {}
         self.depth: int = depth
+        self.evaluation: dict = self.DLV_Evaluation(grid = grid, state = self.state) if \
+                (self.type == MinimaxNode.Type.AI_MOVE and self.depth == self.MAX_MIN_DEPTH) else {}
 
         self.numeric_evaluation: int = 0
         if self.type == MinimaxNode.Type.AI_MOVE:
-            self.numeric_evaluation = sum([key * value for key, value in self.evaluation.items()])
+            self.numeric_evaluation = sum(val * key for val, key in zip(self.evaluation.values(), list(self.evaluation.keys())[::-1]))
         elif self.type == MinimaxNode.Type.RANDOM_TILE:
-            self.numeric_evaluation = evaluation
-
-        with open("output.txt", "a") as f:
-            f.write(f"[DEBUG] Type: {self.type} | State: {self.state} | Depth: {self.depth} | Evaluation: {self.evaluation} | Total ev: {self.numeric_evaluation}\n")
+            self.numeric_evaluation = evaluation if self.depth == self.MAX_MIN_DEPTH else 0
 
         self.children_state: list = []
+
+        # with open("output.txt", "a") as f:
+        #     f.write(f"[DEBUG] Type: {self.type} | State: {self.state} | Depth: {self.depth} | Evaluation: {self.evaluation} | Total ev: {self.numeric_evaluation}\n")
+
+        # print(f"[DEBUG] Type: {self.type} | State: {self.state} | Depth: {self.depth} | Evaluation: {self.evaluation} | Total ev: {self.numeric_evaluation}\n")
 
         if self.type == MinimaxNode.Type.AI_MOVE:
             self.add_children_random_tyle(grid = grid, depth = depth + 1)
         elif self.type == MinimaxNode.Type.RANDOM_TILE:
             self.add_children_move(grid = grid, depth = (depth + 1))
+
+    def maxMinEvaluation(self, alpha: float = -math.inf, beta: float = math.inf) -> int:
+        # Se il nodo è foglia, restituisce la sua valutazione numerica.
+        if not self.children_state:
+            return self.numeric_evaluation
+
+        # Se il nodo appartiene all'AI (minimizza)
+        if self.type == MinimaxNode.Type.AI_MOVE:
+            value = math.inf
+            for child in self.children_state:
+                child_value = child.maxMinEvaluation(alpha, beta)
+                value = min(value, child_value)
+                beta = min(beta, value)
+                if beta <= alpha:
+                    break
+            self.numeric_evaluation = value
+            return value
+
+        # Se il nodo appartiene al RANDOM_TILE (massimizza)
+        else:
+            value = -math.inf
+            for child in self.children_state:
+                child_value = child.maxMinEvaluation(alpha, beta)
+                value = max(value, child_value)
+                alpha = max(alpha, value)
+                if beta <= alpha:
+                    break
+            self.numeric_evaluation = value
+            return value
         
     def add_children_random_tyle(self, grid: numpy.array, depth):
-        if self.depth < EXPECTIMINIMAX_DEPTH:
+        if self.depth < self.MAX_MIN_DEPTH:
             for i in range(N):
                 for j in range(N): 
                     if grid[i][j] == 0:
@@ -236,7 +268,7 @@ class MinimaxNode():
 
 
     def add_children_move(self, grid: numpy.array, depth):
-        if self.depth < EXPECTIMINIMAX_DEPTH:
+        if self.depth < self.MAX_MIN_DEPTH:
             for move in ["u", "d", "l", "r"]:
                 new_grid = generate_grid(grid = grid, direction = move)
                 if not numpy.array_equal(grid, new_grid):
