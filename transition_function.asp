@@ -61,6 +61,3 @@ merged_cell_y(Y, X, X2, Move) :- cell("current", X, Y, V), cell("current", X2, Y
 :~ non_zero_cells(N). [N@4]
 
 #show move/1.
-#show non_zero_cells/1.
-#show merged_cell_x/4.
-#show merged_cell_y/4.
