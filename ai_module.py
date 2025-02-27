@@ -1,13 +1,11 @@
-from embasp.languages.predicate import Predicate
-from embasp.specializations.dlv2.desktop.dlv2_desktop_service import DLV2DesktopService
-from embasp.platforms.desktop.desktop_handler import DesktopHandler
-from embasp.languages.asp.asp_mapper import ASPMapper
-from embasp.languages.asp.asp_input_program import ASPInputProgram
-from embasp.base.option_descriptor import OptionDescriptor
-from embasp.languages.asp.answer_sets import AnswerSet, AnswerSets
-import numpy
-
-import random
+from embasp.languages.predicate import Predicate # type: ignore
+from embasp.specializations.dlv2.desktop.dlv2_desktop_service import DLV2DesktopService # type: ignore
+from embasp.platforms.desktop.desktop_handler import DesktopHandler # type: ignore
+from embasp.languages.asp.asp_mapper import ASPMapper # type: ignore
+from embasp.languages.asp.asp_input_program import ASPInputProgram # type: ignore
+from embasp.base.option_descriptor import OptionDescriptor # type: ignore
+from embasp.languages.asp.answer_sets import AnswerSet, AnswerSets # type: ignore
+import numpy # type: ignore
 
 N = 4
 

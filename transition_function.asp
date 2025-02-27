@@ -53,14 +53,11 @@ merged_cell_y(Y, X, X2, Move) :- cell("current", X, Y, V), cell("current", X2, Y
     &abs(X - X2; Dx), Dx == 1,
     move(Move), cell(Move, _, Y, V2), V2 == V * 2.
 
-:~ cell("current", X, Y, V), cell("current", X, Y2, V), V <> 0, not merged_cell_x(X, Y, Y2). [1@3, Y, Y2]
-:~ cell("current", X, Y, V), cell("current", X2, Y, V), V <> 0, not merged_cell_y(X, Y, X2). [1@3, X, X2]
+:~ cell("current", X, Y, V), cell("current", X, Y2, V), V <> 0, not merged_cell_x(X, Y, Y2). [V*2@3, Y, Y2]
+:~ cell("current", X, Y, V), cell("current", X2, Y, V), V <> 0, not merged_cell_y(X, Y, X2). [V*2@3, X, X2]
 
 
 % minimizzare il numero di celle piene (valore diverso da 0)
 :~ non_zero_cells(N). [N@4]
 
 #show move/1.
-#show non_zero_cells/1.
-#show merged_cell_x/4.
-#show merged_cell_y/4.

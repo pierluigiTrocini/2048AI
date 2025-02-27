@@ -2,7 +2,7 @@
 
 import sys
 import os
-import pygame
+import pygame # type: ignore
 import random
 import time
 from ai_module import AIManager
