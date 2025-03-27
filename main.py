@@ -41,7 +41,7 @@ class Game(main.Py2048):
             if not all((self.grid == old_grid).flatten()):
                 self.new_number()
             
-            # time.sleep(0.25)
+            # time.sleep(0.1)
 
 if __name__ == '__main__':
     game = Game()
