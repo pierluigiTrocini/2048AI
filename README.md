@@ -14,7 +14,7 @@ Import it using `git submodule update`
 - `numpy`
 
 ## Usage
-`./main.py` in repo's folder
+`./main.py` in repo's folder  
 `./main.py --time n` or `./main.py -t n` to set up time between moves (default: 0 s)
 
 ### Submodules
