@@ -1,7 +1,6 @@
 # 2048AI
 `2048AI` is the final project for "Artificial Intelligence" course (DeMaCS - Università della Calabria).  
-It's an implementation of a bot that plays autonomously "2048" game, using *Anser Set Programming - ASP* modules  
-and [DLV-2 solver](https://dlv.demacs.unical.it/home) to choose the best move.
+It's an implementation of a bot that plays autonomously "2048" game, using *Anser Set Programming - ASP* modules and [DLV-2 solver](https://dlv.demacs.unical.it/home) to choose the best move.
 
 ## Install 2048AI
 - Clone the repository: `https://github.com/pierluigiTrocini/2048AI`
