@@ -12,9 +12,10 @@ sys.path.append(os.path.join(os.path.dirname(__file__), 'model'))
 from model import main
 
 class Game(main.Py2048):
-    def __init__(self):
+    def __init__(self, time_sleep = 0):
         super().__init__()
         self.AIManager = AIManager()
+        self.time_sleep = float(time_sleep)
 
 
     def AIPlay(self):
@@ -41,11 +42,10 @@ class Game(main.Py2048):
             if not all((self.grid == old_grid).flatten()):
                 self.new_number()
             
-            # time.sleep(0.1)
+            time.sleep(self.time_sleep)
 
 if __name__ == '__main__':
-    game = Game()
-
+    game = Game(time_sleep = sys.argv[2] if len(sys.argv) > 1 and ((sys.argv[1] == '-t' or sys.argv[1] == '--time') and sys.argv[2]) else 0)
     game.AIPlay()
 
             

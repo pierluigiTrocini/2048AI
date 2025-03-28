@@ -15,6 +15,7 @@ Import it using `git submodule update`
 
 ## Usage
 `./main.py` in repo's folder
+`./main.py --time n` or `./main.py -t n` to set up time between moves (default: 0 s)
 
 ### Submodules
 Thanks to [Edoardo Pizzigoni](https://github.com/epizzigoni) for 2048 UI, that I used in this project

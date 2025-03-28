@@ -61,20 +61,20 @@ merged_cell_y(Y, X, X2, Move) :- cell("current", X, Y, V), cell("current", X2, Y
 :~ non_zero_cells(N). [N@4]
 
 % LOOK-AHEAD
-% Per ogni mossa, calcolo le celle (tra le attuali vuote) in cui può comparire un 2 (90%) o un 4(10%)
-random_placement(Move, X, Y, 2) :- move(Move), cell(Move, X, Y, 0), Move <> "current".
-random_placement(Move, X, Y, 4) :- move(Move), cell(Move, X, Y, 0), Move <> "current".
+% Per ogni mossa, determino le celle (tra le attuali vuote) in cui può comparire un 2 (90%) o un 4(10%)
+random_placement(Move, X, Y, 2) :- move(Move), cell(Move, X, Y, 0).
+random_placement(Move, X, Y, 4) :- move(Move), cell(Move, X, Y, 0).
 
-% minimizzare il numero di celle piene (data la nuova cella)
+% minimizzare il numero di celle piene (considerando anche la nuova cella)
 :~ non_zero_cells(N), move(Move), random_placement(Move, X, Y, 2). [9 * (N + 1)@3, X, Y, Move]
 :~ non_zero_cells(N), move(Move), random_placement(Move, X, Y, 4). [(N + 1)@3, X, Y, Move]
 
 % Data la mossa Move e la cella piazzata casualmente, minimizzare i casi in cui la griglia perde di consistenza
 % (in base ai criteri specificati dai primi weak constraint)
 
-% contare i casi in cui, data la mossa Move, la cella fixed_corner coincida con l'angolo fissato (e minimizzarli)
-:~ move(Move), fixed_corner(X, Y), random_placement(Move, X, Y, 2). [9@2, X, Y, Move]
-:~ move(Move), fixed_corner(X, Y), random_placement(Move, X, Y, 4). [1@2, X, Y, Move]
+% contare i casi in cui, data la mossa Move, la cella piazzata coincida con fixed_corner (e minimizzarli)
+:~ move(Move), fixed_corner(X, Y), max_value(_, _, Value), random_placement(Move, X, Y, 2). [9 * Value@2, X, Y, Move]
+:~ move(Move), fixed_corner(X, Y), max_value(_, _, Value), random_placement(Move, X, Y, 4). [Value@2, X, Y, Move]
 
 % contare i casi in cui, data la mossa Move e una cella piazzata casualmente, la cella sia alla sinistra di
 % una cella (già piazzata) con valore più grande (paga V)
@@ -85,8 +85,6 @@ random_placement(Move, X, Y, 4) :- move(Move), cell(Move, X, Y, 0), Move <> "cur
 % (gia piazzata) con valore più grande (paga V)
 :~ move(Move), random_placement(Move, X, Y, 2), cell(Move, X2, Y, V), X == (X2 - 1), V > 2. [9 * V@1, X, Y, Move]
 :~ move(Move), random_placement(Move, X, Y, 4), cell(Move, X2, Y, V), X == (X2 - 1), V > 4. [V@1, X, Y, Move]
-
-
 
 
 #show move/1.
