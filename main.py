@@ -6,6 +6,7 @@ import pygame # type: ignore
 import random
 import time
 from ai_module import AIManager
+import utility
 
 sys.path.append(os.path.join(os.path.dirname(__file__), 'model'))
 
@@ -45,8 +46,11 @@ class Game(main.Py2048):
             time.sleep(self.time_sleep)
 
 if __name__ == '__main__':
-    game = Game(time_sleep = sys.argv[2] if len(sys.argv) > 1 and ((sys.argv[1] == '-t' or sys.argv[1] == '--time') and sys.argv[2]) else 0)
-    game.AIPlay()
+    if(len(sys.argv) > 1 and sys.argv[1] in ['-h', '--help']):
+        print(utility.HELP)
+    else:
+        game = Game(time_sleep = sys.argv[2] if len(sys.argv) > 1 and ((sys.argv[1] == '-t' or sys.argv[1] == '--time') and sys.argv[2]) else 0)
+        game.AIPlay()
 
             
 
